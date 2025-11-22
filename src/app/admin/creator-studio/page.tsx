@@ -41,14 +41,14 @@ export default function CreatorStudioPage() {
                 setSelectedLessonId(firstModule.lessons[0].id)
             }
         }
-    }, [selectedCourseId])
+    }, [selectedCourseId, selectedCourse])
 
     useEffect(() => {
-        const module = modules.find(m => m.id === selectedModuleId)
-        if (module && module.lessons.length > 0) {
-            setSelectedLessonId(module.lessons[0].id)
+        const selectedModule = modules.find(m => m.id === selectedModuleId)
+        if (selectedModule && selectedModule.lessons.length > 0) {
+            setSelectedLessonId(selectedModule.lessons[0].id)
         }
-    }, [selectedModuleId])
+    }, [selectedModuleId, modules])
 
     // Teleprompter Auto-Scroll
     useEffect(() => {
