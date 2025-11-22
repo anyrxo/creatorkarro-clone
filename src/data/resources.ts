@@ -92,6 +92,17 @@ export const getAllResources = (): ResourceItem[] => {
         moduleId: 'phase-2'
     })
 
+    resources.push({
+        id: 'content-repurposer',
+        title: 'Content Repurposing Engine',
+        description: 'Turn one piece of content into unlimited tweets, LinkedIn posts, and more.',
+        type: 'tool',
+        category: 'tool',
+        courseId: 'instagram-ignited',
+        moduleId: 'phase-2',
+        previewContent: 'content-repurposer'
+    })
+
     // Module 3: Algorithmic Takeover
     resources.push({
         id: 'ig-analytics-tracker',
@@ -705,6 +716,28 @@ export const getAllResources = (): ResourceItem[] => {
         downloadUrl: '#',
         courseId: 'ai-automations',
         moduleId: 'mod-6'
+    })
+
+    resources.push({
+        id: 'lead-magnet-builder',
+        title: 'Lead Magnet Idea Generator',
+        description: 'Generate 5 high-converting lead magnet ideas tailored to your niche.',
+        type: 'tool',
+        category: 'tool',
+        courseId: 'digital-products',
+        moduleId: 'mod-1',
+        previewContent: 'lead-magnet-builder'
+    })
+
+    resources.push({
+        id: 'video-script-generator',
+        title: 'Viral Video Script Writer',
+        description: 'Create scripts for YouTube, TikTok, or Reels with proven hooks and structure.',
+        type: 'tool',
+        category: 'tool',
+        courseId: 'instagram-ignited',
+        moduleId: 'phase-2',
+        previewContent: 'video-script-generator'
     })
 
     return resources

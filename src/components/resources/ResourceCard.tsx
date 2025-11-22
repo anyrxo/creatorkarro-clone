@@ -29,7 +29,11 @@ export function ResourceCard({ resource }: ResourceCardProps) {
         if (resource.previewContent) {
             setIsOpen(true)
         } else if (resource.downloadUrl) {
-            window.open(resource.downloadUrl, '_blank')
+            if (resource.downloadUrl === '#' || resource.downloadUrl === '') {
+                setIsOpen(true)
+            } else {
+                window.open(resource.downloadUrl, '_blank')
+            }
         }
     }
 
@@ -127,6 +131,27 @@ function ResourceModal({ resource, onClose }: { resource: ResourceItem, onClose:
                     {resource.previewContent === 'n8n-blueprints' && <N8nBlueprints />}
                     {resource.previewContent === 'system-prompt-gen' && <SystemPromptGenerator />}
                     {resource.previewContent === 'automation-checklist' && <AutomationChecklist />}
+                    {resource.previewContent === 'content-repurposer' && <ContentRepurposer />}
+                    {resource.previewContent === 'lead-magnet-builder' && <LeadMagnetBuilder />}
+                    {resource.previewContent === 'video-script-generator' && <VideoScriptGenerator />}
+
+                    {!resource.previewContent && (
+                        <div className="flex flex-col items-center justify-center h-full text-center p-8">
+                            <div className="w-20 h-20 bg-[#1a1a1a] rounded-full flex items-center justify-center mb-6 border border-[#2a2a2a]">
+                                <PenTool className="w-10 h-10 text-gray-500" />
+                            </div>
+                            <h3 className="text-2xl font-bold text-white mb-3">Coming Soon</h3>
+                            <p className="text-gray-400 max-w-md mb-8">
+                                This resource is currently being crafted by our team. We're adding new tools and guides every week.
+                            </p>
+                            <button
+                                onClick={onClose}
+                                className="px-6 py-3 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition-colors"
+                            >
+                                Got it
+                            </button>
+                        </div>
+                    )}
                 </div>
             </motion.div>
         </motion.div>
@@ -5972,8 +5997,8 @@ function N8nBlueprints() {
                         key={workflow.id}
                         onClick={() => setSelectedWorkflow(workflow.id)}
                         className={`p-4 rounded-lg border-2 transition-all text-left ${selectedWorkflow === workflow.id
-                                ? 'border-indigo-500 bg-indigo-500/10'
-                                : 'border-[#2a2a2a] bg-[#141414] hover:border-indigo-500/50'
+                            ? 'border-indigo-500 bg-indigo-500/10'
+                            : 'border-[#2a2a2a] bg-[#141414] hover:border-indigo-500/50'
                             }`}
                     >
                         <div className="text-lg mb-2">{workflow.name.split(' ')[0]}</div>
@@ -5981,8 +6006,8 @@ function N8nBlueprints() {
                         <div className="text-xs text-gray-400 mb-2">{workflow.description}</div>
                         <div className="flex items-center justify-between text-xs">
                             <span className={`px-2 py-1 rounded ${workflow.complexity === 'Easy' ? 'bg-green-500/20 text-green-400' :
-                                    workflow.complexity === 'Medium' ? 'bg-yellow-500/20 text-yellow-400' :
-                                        'bg-red-500/20 text-red-400'
+                                workflow.complexity === 'Medium' ? 'bg-yellow-500/20 text-yellow-400' :
+                                    'bg-red-500/20 text-red-400'
                                 }`}>
                                 {workflow.complexity}
                             </span>
@@ -6002,8 +6027,8 @@ function N8nBlueprints() {
                         <div className="bg-[#0a0a0a] p-3 rounded-lg border border-[#2a2a2a]">
                             <div className="text-xs text-gray-500 mb-1">Complexity</div>
                             <div className={`font-semibold ${selected.complexity === 'Easy' ? 'text-green-400' :
-                                    selected.complexity === 'Medium' ? 'text-yellow-400' :
-                                        'text-red-400'
+                                selected.complexity === 'Medium' ? 'text-yellow-400' :
+                                    'text-red-400'
                                 }`}>{selected.complexity}</div>
                         </div>
                         <div className="bg-[#0a0a0a] p-3 rounded-lg border border-[#2a2a2a]">
@@ -6561,5 +6586,738 @@ ${knowledgeSection}`
         </div>
     )
 }
-function AutomationChecklist() { return <div className="text-white">Automation Checklist Coming Soon</div> }
 
+function AutomationChecklist() {
+    const [selectedItems, setSelectedItems] = useState<string[]>([])
+    const [showReport, setShowReport] = useState(false)
+
+    const categories = [
+        {
+            id: 'sales',
+            name: '💰 Sales Automation',
+            color: 'green',
+            items: [
+                { id: 's1', task: 'Lead capture forms auto-save to CRM', timeSaved: 5, difficulty: 'Easy', roi: 'High' },
+                { id: 's2', task: 'Auto-assign leads to sales reps (round-robin)', timeSaved: 3, difficulty: 'Easy', roi: 'Medium' },
+                { id: 's3', task: 'Send automated welcome email to new leads', timeSaved: 10, difficulty: 'Easy', roi: 'High' },
+                { id: 's4', task: 'Slack notification when high-value lead signs up', timeSaved: 2, difficulty: 'Easy', roi: 'Medium' },
+                { id: 's5', task: 'Auto-follow-up if lead doesn\'t respond in 48hrs', timeSaved: 15, difficulty: 'Medium', roi: 'High' },
+                { id: 's6', task: 'Deal won → Auto-create onboarding task list', timeSaved: 10, difficulty: 'Medium', roi: 'High' },
+                { id: 's7', task: 'Stripe payment → Auto-send invoice + receipt', timeSaved: 8, difficulty: 'Easy', roi: 'High' },
+                { id: 's8', task: 'Failed payment → Auto-retry + notify customer', timeSaved: 12, difficulty: 'Medium', roi: 'Very High' },
+                { id: 's9', task: 'Trial ending → Auto-send upgrade reminder', timeSaved: 5, difficulty: 'Easy', roi: 'Very High' },
+                { id: 's10', task: 'Proposal sent → Auto-remind if no response', timeSaved: 7, difficulty: 'Easy', roi: 'Medium' }
+            ]
+        },
+        {
+            id: 'marketing',
+            name: '📢 Marketing Automation',
+            color: 'purple',
+            items: [
+                { id: 'm1', task: 'New blog post → Auto-share to all social media', timeSaved: 15, difficulty: 'Medium', roi: 'High' },
+                { id: 'm2', task: 'Newsletter subscribers → Auto-add to email tool', timeSaved: 5, difficulty: 'Easy', roi: 'High' },
+                { id: 'm3', task: 'Webinar signup → Auto-send calendar invite', timeSaved: 3, difficulty: 'Easy', roi: 'Medium' },
+                { id: 'm4', task: 'Download lead magnet → Trigger email sequence', timeSaved: 10, difficulty: 'Medium', roi: 'Very High' },
+                { id: 'm5', task: 'YouTube upload → Auto-create Twitter thread', timeSaved: 20, difficulty: 'Hard', roi: 'Medium' },
+                { id: 'm6', task: 'Customer review → Auto-post to website/socials', timeSaved: 10, difficulty: 'Medium', roi: 'High' },
+                { id: 'm7', task: 'Track email opens → Tag hot leads in CRM', timeSaved: 8, difficulty: 'Medium', roi: 'High' },
+                { id: 'm8', task: 'Abandoned cart → Auto-recovery email sequence', timeSaved: 12, difficulty: 'Medium', roi: 'Very High' },
+                { id: 'm9', task: 'Event registration → Send pre-event content drip', timeSaved: 15, difficulty: 'Medium', roi: 'High' },
+                { id: 'm10', task: 'Referral signup → Auto-send reward to both users', timeSaved: 5, difficulty: 'Medium', roi: 'High' }
+            ]
+        },
+        {
+            id: 'operations',
+            name: '⚙️ Operations Automation',
+            color: 'blue',
+            items: [
+                { id: 'o1', task: 'New hire → Auto-create accounts (Gmail, Slack, etc)', timeSaved: 30, difficulty: 'Hard', roi: 'High' },
+                { id: 'o2', task: 'Timesheet submitted → Auto-calculate payroll', timeSaved: 20, difficulty: 'Hard', roi: 'Very High' },
+                { id: 'o3', task: 'Project deadline approaching → Auto-remind team', timeSaved: 5, difficulty: 'Easy', roi: 'Medium' },
+                { id: 'o4', task: 'Task completed → Auto-notify next person in workflow', timeSaved: 10, difficulty: 'Medium', roi: 'High' },
+                { id: 'o5', task: 'Invoice unpaid after 7 days → Auto-reminder', timeSaved: 8, difficulty: 'Easy', roi: 'High' },
+                { id: 'o6', task: 'Contract expiring → Auto-alert 30 days prior', timeSaved: 5, difficulty: 'Easy', roi: 'Medium' },
+                { id: 'o7', task: 'Expense submitted → Auto-categorize & log', timeSaved: 15, difficulty: 'Medium', roi: 'High' },
+                { id: 'o8', task: 'Document uploaded → Auto-backup to cloud storage', timeSaved: 3, difficulty: 'Easy', roi: 'Low' },
+                { id: 'o9', task: 'Meeting booked → Auto-send prep materials', timeSaved: 10, difficulty: 'Medium', roi: 'Medium' },
+                { id: 'o10', task: 'Inventory low → Auto-order restock', timeSaved: 20, difficulty: 'Hard', roi: 'Very High' }
+            ]
+        },
+        {
+            id: 'support',
+            name: '🎧 Customer Support Automation',
+            color: 'cyan',
+            items: [
+                { id: 'cs1', task: 'New support ticket → Auto-categorize & assign', timeSaved: 5, difficulty: 'Medium', roi: 'High' },
+                { id: 'cs2', task: 'Common FAQ → AI chatbot auto-responds', timeSaved: 40, difficulty: 'Hard', roi: 'Very High' },
+                { id: 'cs3', task: 'Ticket unresolved 24hrs → Auto-escalate to manager', timeSaved: 10, difficulty: 'Easy', roi: 'High' },
+                { id: 'cs4', task: 'Ticket resolved → Auto-send satisfaction survey', timeSaved: 5, difficulty: 'Easy', roi: 'Medium' },
+                { id: 'cs5', task: 'Angry customer detected → Instant alert to team lead', timeSaved: 15, difficulty: 'Medium', roi: 'High' },
+                { id: 'cs6', task: 'Feature request → Auto-log to product board', timeSaved: 3, difficulty: 'Easy', roi: 'Low' },
+                { id: 'cs7', task: 'Refund requested → Auto-process (under $X)', timeSaved: 10, difficulty: 'Medium', roi: 'High' },
+                { id: 'cs8', task: 'VIP customer emails → Priority routing', timeSaved: 5, difficulty: 'Easy', roi: 'High' },
+                { id: 'cs9', task: 'Support call ended → Auto-send summary email', timeSaved: 8, difficulty: 'Medium', roi: 'Medium' },
+                { id: 'cs10', task: 'Knowledge base update → Auto-notify relevant tickets', timeSaved: 7, difficulty: 'Medium', roi: 'Medium' }
+            ]
+        },
+        {
+            id: 'finance',
+            name: '💵 Finance Automation',
+            color: 'yellow',
+            items: [
+                { id: 'f1', task: 'Stripe payment → Auto-sync to accounting software', timeSaved: 10, difficulty: 'Medium', roi: 'High' },
+                { id: 'f2', task: 'Monthly revenue → Auto-generate P&L report', timeSaved: 30, difficulty: 'Hard', roi: 'High' },
+                { id: 'f3', task: 'Receipt emailed → Auto-extract & categorize expense', timeSaved: 20, difficulty: 'Hard', roi: 'Very High' },
+                { id: 'f4', task: 'Invoice sent → Auto-mark as "pending" in books', timeSaved: 5, difficulty: 'Easy', roi: 'Medium' },
+                { id: 'f5', task: 'Payment received → Auto-reconcile invoice', timeSaved: 8, difficulty: 'Medium', roi: 'High' },
+                { id: 'f6', task: 'Subscription renewed → Auto-log recurring revenue', timeSaved: 3, difficulty: 'Easy', roi: 'Low' },
+                { id: 'f7', task: 'End of month → Auto-close books & backup', timeSaved: 15, difficulty: 'Medium', roi: 'Medium' },
+                { id: 'f8', task: 'Budget exceeded → Auto-alert finance team', timeSaved: 5, difficulty: 'Easy', roi: 'High' },
+                { id: 'f9', task: 'Tax deadline → Auto-reminder 30/15/7 days out', timeSaved: 2, difficulty: 'Easy', roi: 'Low' },
+                { id: 'f10', task: 'Churn → Auto-calculate lost MRR & update forecast', timeSaved: 10, difficulty: 'Medium', roi: 'High' }
+            ]
+        }
+    ]
+
+    const toggleItem = (itemId: string) => {
+        if (selectedItems.includes(itemId)) {
+            setSelectedItems(selectedItems.filter(id => id !== itemId))
+        } else {
+            setSelectedItems([...selectedItems, itemId])
+        }
+    }
+
+    const generateReport = () => {
+        const allItems = categories.flatMap(cat => cat.items)
+        const selected = allItems.filter(item => selectedItems.includes(item.id))
+
+        const totalTimeSaved = selected.reduce((sum, item) => sum + item.timeSaved, 0)
+        const byDifficulty = {
+            Easy: selected.filter(i => i.difficulty === 'Easy').length,
+            Medium: selected.filter(i => i.difficulty === 'Medium').length,
+            Hard: selected.filter(i => i.difficulty === 'Hard').length
+        }
+        const byROI = {
+            Low: selected.filter(i => i.roi === 'Low').length,
+            Medium: selected.filter(i => i.roi === 'Medium').length,
+            High: selected.filter(i => i.roi === 'High').length,
+            'Very High': selected.filter(i => i.roi === 'Very High').length
+        }
+
+        // Priority ranking: High ROI + Easy difficulty = start here
+        const priorities = {
+            'quick wins': selected.filter(i => i.difficulty === 'Easy' && (i.roi === 'High' || i.roi === 'Very High')),
+            'high impact': selected.filter(i => i.difficulty === 'Medium' && i.roi === 'Very High'),
+            'long term': selected.filter(i => i.difficulty === 'Hard' && i.roi === 'Very High'),
+            'low priority': selected.filter(i => i.roi === 'Low' || i.roi === 'Medium')
+        }
+
+        return {
+            totalSelected: selected.length,
+            totalTimeSaved,
+            byDifficulty,
+            byROI,
+            priorities,
+            allSelected: selected
+        }
+    }
+
+    const report = showReport ? generateReport() : null
+    const totalPossible = categories.flatMap(cat => cat.items).length
+
+    return (
+        <div className="space-y-6">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-orange-500/10 to-amber-500/10 border border-orange-500/20 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-white mb-2">✅ Automation Opportunity Audit</h3>
+                <p className="text-gray-300 text-sm">
+                    <strong className="text-orange-400">50-point checklist</strong> to identify where automation can save time and money.
+                    <span className="text-gray-400"> Check what applies to your business.</span>
+                </p>
+            </div>
+
+            {/* Progress */}
+            <div className="bg-[#141414] p-5 rounded-xl border border-[#1f1f1f]">
+                <div className="flex items-center justify-between mb-3">
+                    <span className="text-white font-semibold">Selected: {selectedItems.length}/{totalPossible}</span>
+                    <button
+                        onClick={() => setShowReport(!showReport)}
+                        disabled={selectedItems.length === 0}
+                        className="px-4 py-2 rounded-lg bg-orange-600 hover:bg-orange-700 disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-semibold text-sm transition-colors"
+                    >
+                        {showReport ? 'Hide Report' : 'Generate Report'}
+                    </button>
+                </div>
+                <div className="w-full bg-[#0a0a0a] rounded-full h-3 overflow-hidden">
+                    <div
+                        className="bg-gradient-to-r from-orange-500 to-amber-500 h-full transition-all duration-500"
+                        style={{ width: `${(selectedItems.length / totalPossible) * 100}%` }}
+                    />
+                </div>
+            </div>
+
+            {/* Categories */}
+            {categories.map(category => (
+                <div key={category.id} className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                    <h4 className="text-white font-bold text-lg mb-4">{category.name}</h4>
+                    <div className="space-y-2">
+                        {category.items.map(item => (
+                            <label
+                                key={item.id}
+                                className={`flex items-start gap-3 p-4 rounded-lg border-2 cursor-pointer transition-all ${selectedItems.includes(item.id)
+                                    ? `border-${category.color}-500 bg-${category.color}-500/10`
+                                    : 'border-[#2a2a2a] bg-[#0a0a0a] hover:border-[#3a3a3a]'
+                                    }`}
+                            >
+                                <input
+                                    type="checkbox"
+                                    checked={selectedItems.includes(item.id)}
+                                    onChange={() => toggleItem(item.id)}
+                                    className="mt-1 w-5 h-5 rounded accent-orange-500"
+                                />
+                                <div className="flex-1">
+                                    <div className="text-white text-sm mb-2">{item.task}</div>
+                                    <div className="flex flex-wrap gap-2 text-xs">
+                                        <span className="px-2 py-1 rounded bg-blue-500/20 text-blue-400">
+                                            ⏱️ {item.timeSaved}hrs/month saved
+                                        </span>
+                                        <span className={`px-2 py-1 rounded ${item.difficulty === 'Easy' ? 'bg-green-500/20 text-green-400' :
+                                            item.difficulty === 'Medium' ? 'bg-yellow-500/20 text-yellow-400' :
+                                                'bg-red-500/20 text-red-400'
+                                            }`}>
+                                            {item.difficulty}
+                                        </span>
+                                        <span className={`px-2 py-1 rounded ${item.roi === 'Very High' ? 'bg-purple-500/20 text-purple-400' :
+                                            item.roi === 'High' ? 'bg-green-500/20 text-green-400' :
+                                                item.roi === 'Medium' ? 'bg-yellow-500/20 text-yellow-400' :
+                                                    'bg-gray-500/20 text-gray-400'
+                                            }`}>
+                                            ROI: {item.roi}
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                        ))}
+                    </div>
+                </div>
+            ))}
+
+            {/* Generated Report */}
+            {showReport && report && (
+                <div className="space-y-4">
+                    <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-xl p-6">
+                        <h4 className="text-white font-bold text-xl mb-4">📊 Your Automation Report</h4>
+
+                        {/* Summary Stats */}
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                            <div className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a]">
+                                <div className="text-gray-400 text-xs mb-1">Total Automations</div>
+                                <div className="text-white text-3xl font-bold">{report.totalSelected}</div>
+                            </div>
+                            <div className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a]">
+                                <div className="text-gray-400 text-xs mb-1">Time Saved/Month</div>
+                                <div className="text-emerald-400 text-3xl font-bold">{report.totalTimeSaved}hrs</div>
+                            </div>
+                            <div className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a]">
+                                <div className="text-gray-400 text-xs mb-1">Annual Time Saved</div>
+                                <div className="text-blue-400 text-3xl font-bold">{report.totalTimeSaved * 12}hrs</div>
+                            </div>
+                            <div className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a]">
+                                <div className="text-gray-400 text-xs mb-1">Value (@ $50/hr)</div>
+                                <div className="text-purple-400 text-3xl font-bold">${(report.totalTimeSaved * 12 * 50).toLocaleString()}</div>
+                            </div>
+                        </div>
+
+                        {/* Priority Roadmap */}
+                        <div className="space-y-4">
+                            <h5 className="text-white font-bold">🗺️ Implementation Roadmap</h5>
+
+                            {/* Phase 1: Quick Wins */}
+                            {report.priorities['quick wins'].length > 0 && (
+                                <div className="bg-[#0a0a0a] p-5 rounded-lg border border-green-500/30">
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <span className="text-2xl">⚡</span>
+                                        <h6 className="text-white font-bold">Phase 1: Quick Wins (Start Here!)</h6>
+                                        <span className="ml-auto text-xs px-2 py-1 rounded bg-green-500/20 text-green-400">
+                                            {report.priorities['quick wins'].length} items
+                                        </span>
+                                    </div>
+                                    <p className="text-sm text-gray-400 mb-3">Easy to implement + High ROI = Maximum impact with minimal effort</p>
+                                    <ul className="space-y-2">
+                                        {report.priorities['quick wins'].map((item, i) => (
+                                            <li key={i} className="text-sm text-gray-300 flex items-start gap-2">
+                                                <span className="text-green-400">✓</span>
+                                                <span>{item.task} ({item.timeSaved}hrs/month)</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
+                            {/* Phase 2: High Impact */}
+                            {report.priorities['high impact'].length > 0 && (
+                                <div className="bg-[#0a0a0a] p-5 rounded-lg border border-purple-500/30">
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <span className="text-2xl">🚀</span>
+                                        <h6 className="text-white font-bold">Phase 2: High Impact</h6>
+                                        <span className="ml-auto text-xs px-2 py-1 rounded bg-purple-500/20 text-purple-400">
+                                            {report.priorities['high impact'].length} items
+                                        </span>
+                                    </div>
+                                    <p className="text-sm text-gray-400 mb-3">Medium difficulty but Very High ROI - Worth the investment</p>
+                                    <ul className="space-y-2">
+                                        {report.priorities['high impact'].map((item, i) => (
+                                            <li key={i} className="text-sm text-gray-300 flex items-start gap-2">
+                                                <span className="text-purple-400">✓</span>
+                                                <span>{item.task} ({item.timeSaved}hrs/month)</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
+                            {/* Phase 3: Long Term */}
+                            {report.priorities['long term'].length > 0 && (
+                                <div className="bg-[#0a0a0a] p-5 rounded-lg border border-blue-500/30">
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <span className="text-2xl">🏗️</span>
+                                        <h6 className="text-white font-bold">Phase 3: Long-Term Projects</h6>
+                                        <span className="ml-auto text-xs px-2 py-1 rounded bg-blue-500/20 text-blue-400">
+                                            {report.priorities['long term'].length} items
+                                        </span>
+                                    </div>
+                                    <p className="text-sm text-gray-400 mb-3">Complex setups but massive payoff - Do after Phase 1 & 2</p>
+                                    <ul className="space-y-2">
+                                        {report.priorities['long term'].map((item, i) => (
+                                            <li key={i} className="text-sm text-gray-300 flex items-start gap-2">
+                                                <span className="text-blue-400">✓</span>
+                                                <span>{item.task} ({item.timeSaved}hrs/month)</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Pro Tips */}
+                        <div className="mt-6 bg-gradient-to-r from-orange-500/10 to-amber-500/10 border border-orange-500/30 rounded-lg p-5">
+                            <h6 className="text-white font-bold mb-3">💡 Implementation Tips</h6>
+                            <ul className="space-y-2 text-sm text-gray-300">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-orange-400">•</span>
+                                    <span>Start with Phase 1 Quick Wins - build momentum and prove ROI fast</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-orange-400">•</span>
+                                    <span>Use tools like Zapier, Make.com, or N8N (cheaper for volume)</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-orange-400">•</span>
+                                    <span>Implement 1-2 automations per week (don't overwhelm yourself)</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-orange-400">•</span>
+                                    <span>Track time saved monthly - celebrate wins to stay motivated</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-orange-400">•</span>
+                                    <span>If a task takes &lt;2 minutes manually, automation might not be worth it</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            )}
+        </div>
+    )
+}
+
+
+
+function ContentRepurposer() {
+    const [inputText, setInputText] = useState('')
+    const [contentType, setContentType] = useState('twitter')
+    const [tone, setTone] = useState('engaging')
+    const [generatedContent, setGeneratedContent] = useState('')
+    const [isGenerating, setIsGenerating] = useState(false)
+
+    const contentTypes = [
+        { id: 'twitter', name: '🐦 Twitter Thread', icon: '🧵' },
+        { id: 'linkedin', name: '💼 LinkedIn Post', icon: '📝' },
+        { id: 'instagram', name: '📸 Instagram Caption', icon: '🖼️' },
+        { id: 'newsletter', name: '📧 Newsletter', icon: 'mailbox' },
+        { id: 'tiktok', name: '🎵 TikTok Script', icon: '🎬' }
+    ]
+
+    const tones = ['engaging', 'professional', 'controversial', 'educational', 'humorous']
+
+    const handleGenerate = () => {
+        if (!inputText) return
+        setIsGenerating(true)
+
+        // Simulate generation
+        setTimeout(() => {
+            let content = ''
+            if (contentType === 'twitter') {
+                content = `🧵 1/5\n\n${inputText.substring(0, 50)}...\n\nHere's why this matters:\n\n2/5\nKey insight #1 based on your input.\n\n3/5\nWhy most people get this wrong.\n\n4/5\nActionable tip you can apply today.\n\n5/5\nSummary: ${inputText.substring(0, 30)}...\n\nFollow me for more!`
+            } else if (contentType === 'linkedin') {
+                content = `${inputText.substring(0, 50)}...\n\nI learned this the hard way.\n\nHere's the breakdown:\n\n👉 Point 1\n👉 Point 2\n👉 Point 3\n\nWhy it matters: ${inputText.substring(50, 100)}...\n\nWhat do you think? 👇\n\n#growth #learning #strategy`
+            } else {
+                content = `[${contentType.toUpperCase()} CONTENT]\n\n${inputText}\n\nGenerated with ${tone} tone.`
+            }
+            setGeneratedContent(content)
+            setIsGenerating(false)
+        }, 1500)
+    }
+
+    return (
+        <div className="space-y-6">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-pink-500/10 to-rose-500/10 border border-pink-500/20 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-white mb-2">🔄 Content Repurposer</h3>
+                <p className="text-gray-300 text-sm">
+                    Turn one piece of content into <strong className="text-pink-400">unlimited social posts</strong>.
+                    <span className="text-gray-400"> Multiply your reach instantly.</span>
+                </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-6">
+                {/* Input Section */}
+                <div className="space-y-4">
+                    <div className="bg-[#141414] p-4 rounded-xl border border-[#1f1f1f]">
+                        <label className="block text-white font-semibold mb-2">Source Content</label>
+                        <textarea
+                            value={inputText}
+                            onChange={(e) => setInputText(e.target.value)}
+                            placeholder="Paste your blog post, video transcript, or rough notes here..."
+                            className="w-full h-64 bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg p-4 text-gray-300 focus:outline-none focus:border-pink-500 transition-colors resize-none"
+                        />
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-4">
+                        <div className="bg-[#141414] p-4 rounded-xl border border-[#1f1f1f]">
+                            <label className="block text-white font-semibold mb-2">Format</label>
+                            <select
+                                value={contentType}
+                                onChange={(e) => setContentType(e.target.value)}
+                                className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg px-4 py-3 text-white focus:outline-none focus:border-pink-500"
+                            >
+                                {contentTypes.map(t => (
+                                    <option key={t.id} value={t.id}>{t.name}</option>
+                                ))}
+                            </select>
+                        </div>
+                        <div className="bg-[#141414] p-4 rounded-xl border border-[#1f1f1f]">
+                            <label className="block text-white font-semibold mb-2">Tone</label>
+                            <select
+                                value={tone}
+                                onChange={(e) => setTone(e.target.value)}
+                                className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg px-4 py-3 text-white focus:outline-none focus:border-pink-500 capitalize"
+                            >
+                                {tones.map(t => (
+                                    <option key={t} value={t}>{t}</option>
+                                ))}
+                            </select>
+                        </div>
+                    </div>
+
+                    <button
+                        onClick={handleGenerate}
+                        disabled={!inputText || isGenerating}
+                        className="w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                    >
+                        {isGenerating ? (
+                            <>
+                                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                                Repurposing...
+                            </>
+                        ) : (
+                            <>
+                                🔄 Generate Content
+                            </>
+                        )}
+                    </button>
+                </div>
+
+                {/* Output Section */}
+                <div className="space-y-4">
+                    <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f] h-full flex flex-col">
+                        <div className="flex items-center justify-between mb-4">
+                            <h4 className="text-white font-bold">✨ Generated Output</h4>
+                            {generatedContent && <CopyButton text={generatedContent} />}
+                        </div>
+
+                        {generatedContent ? (
+                            <div className="flex-1 bg-[#0a0a0a] rounded-lg p-6 border border-[#2a2a2a] overflow-y-auto max-h-[500px]">
+                                <pre className="text-gray-300 whitespace-pre-wrap font-sans text-sm leading-relaxed">
+                                    {generatedContent}
+                                </pre>
+                            </div>
+                        ) : (
+                            <div className="flex-1 flex flex-col items-center justify-center text-center p-8 bg-[#0a0a0a] rounded-lg border border-[#2a2a2a] border-dashed">
+                                <div className="w-16 h-16 bg-[#1a1a1a] rounded-full flex items-center justify-center mb-4">
+                                    <PenTool className="w-8 h-8 text-gray-600" />
+                                </div>
+                                <p className="text-gray-500 text-sm">
+                                    Enter your content and click generate to see the magic happen.
+                                </p>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function LeadMagnetBuilder() {
+    const [niche, setNiche] = useState('')
+    const [audience, setAudience] = useState('')
+    const [problem, setProblem] = useState('')
+    const [generatedIdeas, setGeneratedIdeas] = useState<any[]>([])
+    const [isGenerating, setIsGenerating] = useState(false)
+
+    const handleGenerate = () => {
+        if (!niche || !audience || !problem) return
+        setIsGenerating(true)
+
+        setTimeout(() => {
+            setGeneratedIdeas([
+                {
+                    type: '📘 Ultimate Guide (Ebook)',
+                    title: `The Complete Guide to ${niche} for ${audience}`,
+                    outline: ['Chapter 1: Understanding the Basics', 'Chapter 2: Common Mistakes to Avoid', 'Chapter 3: Step-by-Step Strategy', 'Chapter 4: Tools & Resources'],
+                    hook: 'Stop guessing and start executing with this comprehensive playbook.'
+                },
+                {
+                    type: '✅ Checklist / Cheat Sheet',
+                    title: `The ${problem} Solver Checklist`,
+                    outline: ['Pre-requisites', 'Daily Action Items', 'Weekly Review Points', 'Emergency Troubleshooting'],
+                    hook: 'Solve [Problem] in 15 minutes a day with this simple checklist.'
+                },
+                {
+                    type: '🎥 Mini-Course / Webinar',
+                    title: `Master ${niche} in 3 Days`,
+                    outline: ['Day 1: The Foundation', 'Day 2: The Strategy', 'Day 3: The Execution'],
+                    hook: 'Watch over my shoulder as I show you exactly how to succeed.'
+                },
+                {
+                    type: '🛠️ Toolkit / Resource List',
+                    title: `Top 10 Tools for ${audience}`,
+                    outline: ['Essential Software', 'Hardware Recommendations', 'Hidden Gems', 'Budget Alternatives'],
+                    hook: 'Save hours of research with my curated list of proven tools.'
+                },
+                {
+                    type: '📊 Template / Swipe File',
+                    title: `Copy-Paste ${niche} Templates`,
+                    outline: ['Email Scripts', 'Social Media Captions', 'Outreach Messages', 'Design Files'],
+                    hook: 'Don\'t start from scratch. Use my proven templates to get results fast.'
+                }
+            ])
+            setIsGenerating(false)
+        }, 1500)
+    }
+
+    return (
+        <div className="space-y-6">
+            <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 border border-purple-500/20 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-white mb-2">🧲 Lead Magnet Builder</h3>
+                <p className="text-gray-300 text-sm">
+                    Generate high-converting <strong className="text-purple-400">lead magnet ideas</strong> that build your email list fast.
+                </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-4">
+                <div className="bg-[#141414] p-4 rounded-xl border border-[#1f1f1f]">
+                    <label className="block text-white font-semibold mb-2">Your Niche</label>
+                    <input
+                        type="text"
+                        value={niche}
+                        onChange={(e) => setNiche(e.target.value)}
+                        placeholder="e.g. Fitness, Marketing"
+                        className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg px-4 py-2 text-white focus:border-purple-500 outline-none"
+                    />
+                </div>
+                <div className="bg-[#141414] p-4 rounded-xl border border-[#1f1f1f]">
+                    <label className="block text-white font-semibold mb-2">Target Audience</label>
+                    <input
+                        type="text"
+                        value={audience}
+                        onChange={(e) => setAudience(e.target.value)}
+                        placeholder="e.g. Busy Moms, Startup Founders"
+                        className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg px-4 py-2 text-white focus:border-purple-500 outline-none"
+                    />
+                </div>
+                <div className="bg-[#141414] p-4 rounded-xl border border-[#1f1f1f]">
+                    <label className="block text-white font-semibold mb-2">Main Problem</label>
+                    <input
+                        type="text"
+                        value={problem}
+                        onChange={(e) => setProblem(e.target.value)}
+                        placeholder="e.g. Losing weight, Getting leads"
+                        className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg px-4 py-2 text-white focus:border-purple-500 outline-none"
+                    />
+                </div>
+            </div>
+
+            <button
+                onClick={handleGenerate}
+                disabled={!niche || !audience || !problem || isGenerating}
+                className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg disabled:opacity-50"
+            >
+                {isGenerating ? 'Generating Ideas...' : '✨ Generate Lead Magnets'}
+            </button>
+
+            {generatedIdeas.length > 0 && (
+                <div className="grid md:grid-cols-2 gap-4">
+                    {generatedIdeas.map((idea, i) => (
+                        <div key={i} className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f] hover:border-purple-500/50 transition-colors">
+                            <div className="text-xs font-bold text-purple-400 mb-2 uppercase tracking-wider">{idea.type}</div>
+                            <h4 className="text-white font-bold text-lg mb-2">{idea.title}</h4>
+                            <p className="text-gray-400 text-sm mb-4 italic">"{idea.hook}"</p>
+                            <div className="bg-[#0a0a0a] p-3 rounded-lg border border-[#2a2a2a]">
+                                <div className="text-xs text-gray-500 mb-2">Suggested Outline:</div>
+                                <ul className="space-y-1">
+                                    {idea.outline.map((item: string, j: number) => (
+                                        <li key={j} className="text-sm text-gray-300 flex items-center gap-2">
+                                            <span className="w-1 h-1 bg-purple-500 rounded-full"></span>
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            )}
+        </div>
+    )
+}
+
+function VideoScriptGenerator() {
+    const [topic, setTopic] = useState('')
+    const [videoType, setVideoType] = useState('tutorial')
+    const [duration, setDuration] = useState('short')
+    const [script, setScript] = useState<any>(null)
+    const [isGenerating, setIsGenerating] = useState(false)
+
+    const handleGenerate = () => {
+        if (!topic) return
+        setIsGenerating(true)
+
+        setTimeout(() => {
+            setScript({
+                title: `${topic}: The Ultimate Guide`,
+                hook: `Did you know that 90% of people fail at ${topic} because of one simple mistake? In this video, I'm going to show you exactly how to fix it.`,
+                intro: `Hi, I'm [Name], and on this channel, we help you master ${topic}. If you're new here, consider subscribing for more tips on [Niche].`,
+                body: [
+                    { title: 'Step 1: The Foundation', content: `First, you need to understand the basics of ${topic}. Most people skip this, but it's crucial because...` },
+                    { title: 'Step 2: The Strategy', content: `Now that you have the basics, let's talk strategy. Here is where the magic happens...` },
+                    { title: 'Step 3: The Execution', content: `Finally, it's time to take action. Here is exactly what you need to do next...` }
+                ],
+                cta: `If you found this helpful, hit that like button and comment below with your biggest takeaway. And don't forget to check out my free guide in the description!`,
+                thumbnail: `Close-up of face with shocked expression, text overlay: "${topic.toUpperCase()} SECRETS"`
+            })
+            setIsGenerating(false)
+        }, 1500)
+    }
+
+    return (
+        <div className="space-y-6">
+            <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-white mb-2">🎬 Video Script Generator</h3>
+                <p className="text-gray-300 text-sm">
+                    Create viral video scripts for YouTube, TikTok, or Reels in seconds.
+                </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-4">
+                <div className="bg-[#141414] p-4 rounded-xl border border-[#1f1f1f]">
+                    <label className="block text-white font-semibold mb-2">Video Topic</label>
+                    <input
+                        type="text"
+                        value={topic}
+                        onChange={(e) => setTopic(e.target.value)}
+                        placeholder="e.g. How to bake a cake"
+                        className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg px-4 py-2 text-white focus:border-red-500 outline-none"
+                    />
+                </div>
+                <div className="bg-[#141414] p-4 rounded-xl border border-[#1f1f1f]">
+                    <label className="block text-white font-semibold mb-2">Video Type</label>
+                    <select
+                        value={videoType}
+                        onChange={(e) => setVideoType(e.target.value)}
+                        className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg px-4 py-2 text-white focus:border-red-500 outline-none"
+                    >
+                        <option value="tutorial">Tutorial / How-To</option>
+                        <option value="story">Storytelling / Vlog</option>
+                        <option value="listicle">Listicle / Top 10</option>
+                        <option value="review">Product Review</option>
+                    </select>
+                </div>
+                <div className="bg-[#141414] p-4 rounded-xl border border-[#1f1f1f]">
+                    <label className="block text-white font-semibold mb-2">Duration</label>
+                    <select
+                        value={duration}
+                        onChange={(e) => setDuration(e.target.value)}
+                        className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg px-4 py-2 text-white focus:border-red-500 outline-none"
+                    >
+                        <option value="short">Short (TikTok/Reels - 60s)</option>
+                        <option value="medium">Medium (YouTube - 5-10m)</option>
+                        <option value="long">Long (Deep Dive - 20m+)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button
+                onClick={handleGenerate}
+                disabled={!topic || isGenerating}
+                className="w-full bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg disabled:opacity-50"
+            >
+                {isGenerating ? 'Writing Script...' : '🎥 Generate Script'}
+            </button>
+
+            {script && (
+                <div className="space-y-4">
+                    <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                        <div className="flex items-center justify-between mb-4">
+                            <h4 className="text-white font-bold text-xl">{script.title}</h4>
+                            <CopyButton text={`${script.title}\n\nHOOK:\n${script.hook}\n\nINTRO:\n${script.intro}\n\nBODY:\n${script.body.map((b: any) => `${b.title}\n${b.content}`).join('\n\n')}\n\nCTA:\n${script.cta}`} />
+                        </div>
+
+                        <div className="space-y-6">
+                            <div className="bg-[#0a0a0a] p-4 rounded-lg border-l-4 border-red-500">
+                                <div className="text-xs font-bold text-red-400 mb-1">HOOK (0:00-0:05)</div>
+                                <p className="text-white">{script.hook}</p>
+                            </div>
+
+                            <div className="bg-[#0a0a0a] p-4 rounded-lg border-l-4 border-orange-500">
+                                <div className="text-xs font-bold text-orange-400 mb-1">INTRO (0:05-0:30)</div>
+                                <p className="text-white">{script.intro}</p>
+                            </div>
+
+                            <div className="space-y-3">
+                                {script.body.map((section: any, i: number) => (
+                                    <div key={i} className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a]">
+                                        <div className="text-sm font-bold text-white mb-1">{section.title}</div>
+                                        <p className="text-gray-300 text-sm">{section.content}</p>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="bg-[#0a0a0a] p-4 rounded-lg border-l-4 border-green-500">
+                                <div className="text-xs font-bold text-green-400 mb-1">CTA (End)</div>
+                                <p className="text-white">{script.cta}</p>
+                            </div>
+
+                            <div className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a] border-dashed">
+                                <div className="text-xs font-bold text-gray-500 mb-1">THUMBNAIL IDEA</div>
+                                <p className="text-gray-400 italic">{script.thumbnail}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+        </div>
+    )
+}
