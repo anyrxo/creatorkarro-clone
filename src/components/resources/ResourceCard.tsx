@@ -1634,7 +1634,7 @@ function NicheValidator() {
 
     const calculateScore = () => {
         let total = 0
-        let maxScore = 100
+        const maxScore = 100
         const breakdown: any = {}
 
         // 1. Market Size (0-15 points)
@@ -3469,8 +3469,8 @@ P.S. - For those who joined: your first lesson is waiting for you. Log in and le
                                 setGenerated(false)
                             }}
                             className={`p-4 rounded-lg border-2 transition-all ${launchType === type.id
-                                    ? 'border-purple-500 bg-purple-500/10'
-                                    : 'border-[#2a2a2a] bg-[#0a0a0a] hover:border-purple-500/50'
+                                ? 'border-purple-500 bg-purple-500/10'
+                                : 'border-[#2a2a2a] bg-[#0a0a0a] hover:border-purple-500/50'
                                 }`}
                         >
                             <div className="text-2xl mb-1">{type.emoji}</div>
@@ -3510,8 +3510,8 @@ P.S. - For those who joined: your first lesson is waiting for you. Log in and le
                                         key={day}
                                         onClick={() => setEmailDay(day)}
                                         className={`p-3 rounded-lg border-2 transition-all text-center ${emailDay === day
-                                                ? 'border-purple-500 bg-purple-500/10'
-                                                : 'border-[#2a2a2a] bg-[#0a0a0a] hover:border-purple-500/50'
+                                            ? 'border-purple-500 bg-purple-500/10'
+                                            : 'border-[#2a2a2a] bg-[#0a0a0a] hover:border-purple-500/50'
                                             }`}
                                     >
                                         <div className="text-white font-bold text-sm mb-1">Day {day}</div>
@@ -3937,7 +3937,7 @@ Have a great week!`
     const analyzeSpamScore = () => {
         const message = generateMessage().initial
         let score = 0
-        let issues: string[] = []
+        const issues: string[] = []
 
         // Check for spam triggers
         if (message.toLowerCase().includes('free')) {
@@ -4750,7 +4750,432 @@ function RoiCalculator() {
         </div>
     )
 }
-function OnboardingChecklist() { return <div className="text-white">Onboarding Checklist Coming Soon</div> }
+
+function OnboardingChecklist() {
+    const [productType, setProductType] = useState('course')
+    const [productName, setProductName] = useState('')
+    const [generated, setGenerated] = useState(false)
+
+    const productTypes = [
+        { id: 'course', name: '📚 Online Course', quickWin: 'Complete Module 1' },
+        { id: 'membership', name: '🎯 Membership', quickWin: 'Attend first live call' },
+        { id: 'software', name: '💻 Software/SaaS', quickWin: 'Set up first workflow' },
+        { id: 'coaching', name: '💡 Coaching Program', quickWin: 'First breakthrough' }
+    ]
+
+    const generateOnboarding = () => {
+        const product = productTypes.find(p => p.id === productType)
+
+        return {
+            welcome: {
+                subject: `✨ Welcome to ${productName || '[Product Name]'}! Here's what to do first...`,
+                body: `Hey [Name]!
+
+🎉 You're officially in! Welcome to ${productName || '[Product Name]'}. I'm SO excited to have you here.
+
+**Here's what happens next:**
+
+✅ **Right Now** (5 min):
+• Log in to your dashboard: [LINK]
+• Update your profile (helps us personalize your experience)
+• Download the quick-start guide
+
+✅ **Today** (30 min):
+• ${product?.quickWin || 'Complete your first task'}
+• Join our private community: [LINK]
+• Introduce yourself (we love to celebrate new members!)
+
+✅ **This Week**:
+• Attend the Welcome orientation (${productType === 'membership' ? 'Wednesday at 2pm PT' : 'self-paced video'})
+• Complete your first ${productType === 'course' ? 'module' : productType === 'software' ? 'workflow' : 'session'}
+• Share your #1 goal with the community
+
+**Need help?**
+• Email me: [your email]
+• ${productType === 'membership' || productType === 'coaching' ? 'Office hours: [schedule link]' : 'Check our FAQ: [link]'}
+• Community support: [link]
+
+Let's do this! 🚀
+
+[Your Name]
+
+P.S. - The #1 thing that determines success? **Taking action in the first 48 hours.** So don't wait. Log in and get started NOW.`
+            },
+            timeline: [
+                {
+                    day: 'Day 1',
+                    hours: '0-2 hours',
+                    tasks: [
+                        { type: 'email', item: 'Send welcome email (see above)' },
+                        { type: 'access', item: 'Grant platform access + login details' },
+                        { type: 'community', item: 'Add to private community/group' },
+                        { type: 'resource', item: 'Send quick-start guide PDF' }
+                    ],
+                    goal: 'Immediate action + momentum',
+                    metric: 'Login rate: 85%+ (industry benchmark)'
+                },
+                {
+                    day: 'Day 2',
+                    hours: '24-48 hours',
+                    tasks: [
+                        { type: 'email', item: `"Did you ${product?.quickWin.toLowerCase()}?" check-in` },
+                        { type: 'support', item: 'Monitor for stuck/inactive users' },
+                        { type: 'engagement', item: 'Reply to community intro posts' },
+                        { type: 'content', item: productType === 'course' ? 'Remind: Module 1 unlock' : 'Share key resource' }
+                    ],
+                    goal: 'Quick win achieved',
+                    metric: 'Quick win completion: 60%+'
+                },
+                {
+                    day: 'Day 3',
+                    hours: '48-72 hours',
+                    tasks: [
+                        { type: 'email', item: '"Your progress so far" + encouragement' },
+                        { type: 'value', item: 'Share success story/testimonial' },
+                        { type: 'support', item: 'Proactive outreach to inactive users' },
+                        { type: 'upsell', item: productType === 'course' ? 'Mention coaching if struggling' : 'Highlight premium features' }
+                    ],
+                    goal: 'Build confidence + habit',
+                    metric: 'Engagement rate: 50%+'
+                },
+                {
+                    day: 'Day 7',
+                    hours: '1 week',
+                    tasks: [
+                        { type: 'email', item: '"Week 1 wins" recap + Week 2 preview' },
+                        { type: 'feedback', item: 'Send NPS survey (0-10 rating)' },
+                        { type: 'community', item: 'Host live Q&A or check-in call' },
+                        { type: 'milestone', item: 'Celebrate first milestone achieved' }
+                    ],
+                    goal: 'Assess satisfaction early',
+                    metric: 'NPS Score: 8+ is great'
+                },
+                {
+                    day: 'Day 14',
+                    hours: '2 weeks',
+                    tasks: [
+                        { type: 'email', item: '"Halfway through Week 2" motivation boost' },
+                        { type: 'content', item: productType === 'course' ? 'Module completion reminder' : 'Feature highlight' },
+                        { type: 'support', item: 'Check in with users at risk of churn' },
+                        { type: 'engagement', item: 'Share advanced tips/resources' }
+                    ],
+                    goal: 'Maintain momentum',
+                    metric: 'Active users: 40%+ (2-week retention)'
+                },
+                {
+                    day: 'Day 30',
+                    hours: '1 month',
+                    tasks: [
+                        { type: 'email', item: '"Your 30-day transformation" reflection' },
+                        { type: 'testimonial', item: 'Request testimonial/review (if positive experience)' },
+                        { type: 'renewal', item: productType === 'membership' ? 'Renewal reminder (if monthly)' : 'Referral ask' },
+                        { type: 'upsell', item: 'Introduce next-level offer/upgrade' }
+                    ],
+                    goal: 'Lock in success + advocacy',
+                    metric: '30-day retention: 70%+ | Testimonials: 15%+'
+                }
+            ],
+            quickWins: [
+                {
+                    win: product?.quickWin || 'Complete first task',
+                    why: 'Early success = continued engagement (Psychology: Progress Principle)',
+                    how: productType === 'course' ? 'Make Module 1 super short (10-15 min max)' : productType === 'software' ? 'Offer pre-built templates' : 'Book first call within 48 hours'
+                },
+                {
+                    win: 'Get first result/output',
+                    why: 'Tangible outcome builds confidence',
+                    how: 'Provide template or tool they can use immediately'
+                },
+                {
+                    win: 'Connect with community',
+                    why: 'Social proof + accountability increases retention 3x',
+                    how: 'Require intro post with prompt: "My #1 goal is..."'
+                }
+            ],
+            emailTemplates: {
+                day2Subject: `Quick check-in: Did you ${product?.quickWin.toLowerCase()}? 🎯`,
+                day2Body: `Hey [Name],
+
+Just checking in! Did you get a chance to ${product?.quickWin.toLowerCase()} yet?
+
+If YES → Amazing! Drop a comment in the community and share your win. We love celebrating!
+
+If NOT → No worries! Here's why you should do it TODAY:
+• Takes only [time]
+• Gives you [specific benefit]
+• Sets you up for [next step]
+
+**Click here to get started:** [LINK]
+
+Need help? Just reply to this email.
+
+You got this!
+[Your Name]`,
+
+                day7Subject: `🎉 Week 1 recap + what's coming in Week 2`,
+                day7Body: `Hey [Name],
+
+You just completed your first week with ${productName || '[Product]'}! 👏
+
+**Quick pulse check:**
+On a scale of 0-10, how would you rate your experience so far? [LINK TO SURVEY]
+
+**What's coming in Week 2:**
+${productType === 'course' ? '• Module 2: [Topic]\n• Live Q&A on [date]\n• Bonus workshop: [topic]' : productType === 'membership' ? '• Live coaching call\n• New resource drop\n• Community challenge' : '• Advanced features unlocked\n• Implementation support\n• Success stories'}
+
+Keep up the momentum! You're doing great.
+
+[Your Name]
+
+P.S. - Stuck on anything? Reply and let me know. I'm here to help.`,
+
+                day30Subject: `Your 30-day transformation (+ a favor to ask)`,
+                day30Body: `Hey [Name],
+
+It's been 30 days since you joined ${productName || '[Product]'}.
+
+I'd love to know:
+• What's been your biggest win so far?
+• What surprised you most?
+• What could be better?
+
+**If you're loving it** → Would you mind leaving a quick review/testimonial? It helps more people like you find us. [LINK]
+
+**If you're not seeing results** → Let's fix that. Reply to this email and let's troubleshoot together.
+
+Thanks for being here!
+[Your Name]
+
+P.S. - ${productType === 'membership' ? 'Your next billing date is [date]. Looking forward to Month 2!' : 'Ready for the next level? Check out [advanced offer].'}`
+            },
+            metrics: [
+                { metric: 'Day 1 Login Rate', target: '85%+', why: 'Immediate engagement predicts completion' },
+                { metric: 'Day 2 Quick Win', target: '60%+', why: 'Early success = momentum' },
+                { metric: 'Week 1 NPS Score', target: '8+ average', why: 'Indicates product-market fit' },
+                { metric: '30-Day Retention', target: '70%+', why: 'Benchmark for sustainable business' },
+                { metric: 'Testimonial Rate', target: '15%+', why: 'Social proof for future sales' }
+            ]
+        }
+    }
+
+    const handleGenerate = () => {
+        if (!productName.trim()) {
+            alert('Please enter your product name!')
+            return
+        }
+        setGenerated(true)
+    }
+
+    const onboarding = generated ? generateOnboarding() : null
+    const selectedProduct = productTypes.find(p => p.id === productType)
+
+    return (
+        <div className="space-y-6">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-white mb-2">📋 Customer Onboarding Builder</h3>
+                <p className="text-gray-300 text-sm">
+                    Build a <strong className="text-cyan-400">first 30-day experience</strong> that maximizes retention.
+                    <span className="text-gray-400"> 70%+ retention starts here.</span>
+                </p>
+            </div>
+
+            {/* Product Details */}
+            <div className="grid md:grid-cols-2 gap-4">
+                <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                    <label className="block text-white font-semibold mb-3">
+                        Product Name <span className="text-cyan-400">*</span>
+                    </label>
+                    <input
+                        type="text"
+                        value={productName}
+                        onChange={(e) => setProductName(e.target.value)}
+                        placeholder="e.g., Creator Accelerator"
+                        className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-cyan-500 focus:outline-none"
+                    />
+                </div>
+
+                <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                    <label className="block text-white font-semibold mb-3">Product Type</label>
+                    <select
+                        value={productType}
+                        onChange={(e) => {
+                            setProductType(e.target.value)
+                            setGenerated(false)
+                        }}
+                        className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg px-4 py-3 text-white focus:border-cyan-500 focus:outline-none"
+                    >
+                        {productTypes.map(type => (
+                            <option key={type.id} value={type.id}>{type.name}</option>
+                        ))}
+                    </select>
+                </div>
+            </div>
+
+            {/* Generate Button */}
+            <button
+                onClick={handleGenerate}
+                disabled={!productName.trim()}
+                className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 disabled:from-gray-600 disabled:to-gray-700 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] disabled:scale-100 disabled:cursor-not-allowed shadow-lg"
+            >
+                {productName.trim() ? 'Generate Onboarding Plan 📋' : 'Enter product name first'}
+            </button>
+
+            {/* Generated Onboarding */}
+            {generated && onboarding && (
+                <div className="space-y-4">
+                    <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-xl p-5">
+                        <h4 className="text-white font-bold mb-2">✅ 30-Day Onboarding Ready!</h4>
+                        <p className="text-gray-300 text-sm">
+                            Complete timeline with email templates, quick wins, and success metrics.
+                        </p>
+                    </div>
+
+                    {/* Welcome Email */}
+                    <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                        <div className="flex items-center justify-between mb-4">
+                            <h5 className="text-white font-bold">📧 Welcome Email (Send Immediately)</h5>
+                            <CopyButton text={`${onboarding.welcome.subject}\n\n${onboarding.welcome.body}`} />
+                        </div>
+                        <div className="space-y-3">
+                            <div className="bg-[#0a0a0a] p-3 rounded-lg border border-[#2a2a2a]">
+                                <div className="text-xs text-gray-500 mb-1">Subject Line:</div>
+                                <div className="text-gray-300 text-sm">{onboarding.welcome.subject}</div>
+                            </div>
+                            <div className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a]">
+                                <pre className="text-gray-300 text-sm whitespace-pre-wrap font-sans max-h-64 overflow-y-auto">
+                                    {onboarding.welcome.body}
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 30-Day Timeline */}
+                    <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                        <h5 className="text-white font-bold mb-4">📅 30-Day Touchpoint Timeline</h5>
+                        <div className="space-y-4">
+                            {onboarding.timeline.map((milestone, i) => (
+                                <div key={i} className="bg-[#0a0a0a] p-5 rounded-lg border border-[#2a2a2a]">
+                                    <div className="flex items-center justify-between mb-3">
+                                        <div>
+                                            <h6 className="text-white font-bold">{milestone.day}</h6>
+                                            <p className="text-xs text-gray-500">{milestone.hours}</p>
+                                        </div>
+                                        <div className="text-right">
+                                            <div className="text-xs text-gray-500">Goal:</div>
+                                            <div className="text-cyan-400 text-sm font-semibold">{milestone.goal}</div>
+                                        </div>
+                                    </div>
+
+                                    <div className="space-y-2 mb-3">
+                                        {milestone.tasks.map((task, j) => (
+                                            <div key={j} className="flex items-start gap-2 text-sm">
+                                                <span className={`px-2 py-0.5 rounded text-xs ${task.type === 'email' ? 'bg-blue-500/20 text-blue-400' :
+                                                    task.type === 'support' ? 'bg-green-500/20 text-green-400' :
+                                                        task.type === 'community' ? 'bg-purple-500/20 text-purple-400' :
+                                                            'bg-gray-500/20 text-gray-400'
+                                                    }`}>
+                                                    {task.type}
+                                                </span>
+                                                <span className="text-gray-300 flex-1">{task.item}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+
+                                    <div className="pt-3 border-t border-[#2a2a2a] text-xs text-gray-400">
+                                        📊 {milestone.metric}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Quick Wins */}
+                    <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                        <h5 className="text-white font-bold mb-4">🎯 Quick Win Strategy</h5>
+                        <div className="space-y-3">
+                            {onboarding.quickWins.map((qw, i) => (
+                                <div key={i} className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a]">
+                                    <div className="text-cyan-400 font-semibold mb-2">{qw.win}</div>
+                                    <div className="text-sm text-gray-400 mb-2"><strong>Why:</strong> {qw.why}</div>
+                                    <div className="text-sm text-gray-300"><strong>How:</strong> {qw.how}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Additional Email Templates */}
+                    <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                        <h5 className="text-white font-bold mb-4">📬 Additional Email Templates</h5>
+                        <div className="space-y-4">
+                            {[
+                                { day: 'Day 2', subject: onboarding.emailTemplates.day2Subject, body: onboarding.emailTemplates.day2Body },
+                                { day: 'Day 7', subject: onboarding.emailTemplates.day7Subject, body: onboarding.emailTemplates.day7Body },
+                                { day: 'Day 30', subject: onboarding.emailTemplates.day30Subject, body: onboarding.emailTemplates.day30Body }
+                            ].map((email, i) => (
+                                <div key={i} className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a]">
+                                    <div className="flex items-center justify-between mb-2">
+                                        <span className="text-white font-semibold">{email.day} Email</span>
+                                        <CopyButton text={`${email.subject}\n\n${email.body}`} />
+                                    </div>
+                                    <div className="text-xs text-gray-500 mb-2">Subject: {email.subject}</div>
+                                    <details className="text-sm text-gray-400">
+                                        <summary className="cursor-pointer hover:text-gray-300">View full email</summary>
+                                        <pre className="text-gray-300 text-xs whitespace-pre-wrap font-sans mt-2 p-3 bg-[#000] rounded">
+                                            {email.body}
+                                        </pre>
+                                    </details>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Success Metrics */}
+                    <div className="bg-[#141414] p-6 rounded-xl border border-[#1f1f1f]">
+                        <h5 className="text-white font-bold mb-4">📊 Key Success Metrics</h5>
+                        <div className="grid md:grid-cols-2 gap-3">
+                            {onboarding.metrics.map((m, i) => (
+                                <div key={i} className="bg-[#0a0a0a] p-4 rounded-lg border border-[#2a2a2a]">
+                                    <div className="text-white font-semibold mb-1">{m.metric}</div>
+                                    <div className="text-2xl font-bold text-cyan-400 mb-2">{m.target}</div>
+                                    <div className="text-xs text-gray-400">{m.why}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Pro Tips */}
+                    <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-5">
+                        <h4 className="text-white font-bold mb-3">💡 Onboarding Pro Tips</h4>
+                        <ul className="space-y-2 text-sm text-gray-300">
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-400">•</span>
+                                <span>**First 48 hours are critical**: 85% of churn happens when users don't take action immediately</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-400">•</span>
+                                <span>**Quick wins build momentum**: Users who achieve early success are 3x more likely to complete</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-400">•</span>
+                                <span>**Personal touch matters**: Reply to intro posts, send video messages, host live check-ins</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-400">•</span>
+                                <span>**Track engagement daily**: Proactively reach out to inactive users before they ghost</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-400">•</span>
+                                <span>**Celebrate milestones**: Recognition increases completion by 40%</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            )}
+        </div>
+    )
+}
+
 function VaJobDescription() { return <div className="text-white">VA Job Description Coming Soon</div> }
 function N8nBlueprints() { return <div className="text-white">N8N Blueprints Coming Soon</div> }
 
