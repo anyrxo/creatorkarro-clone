@@ -7441,7 +7441,7 @@ function CapCutCheatSheet() {
             item[activeOS].toLowerCase().includes(searchTerm.toLowerCase())
         )
         if (filtered.length > 0) {
-            acc[category] = filtered
+            (acc as any)[category] = filtered
         }
         return acc
     }, {} as typeof shortcuts)
