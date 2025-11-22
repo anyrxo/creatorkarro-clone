@@ -57,7 +57,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
                 }
 
                 if (data) {
-                    const dbLessons = data.map(row => row.lesson_id)
+                    const dbLessons = data.map((row: { lesson_id: string }) => row.lesson_id)
                     const mergedLessons = Array.from(new Set([...completedLessons, ...dbLessons]))
 
                     if (mergedLessons.length !== completedLessons.length) {
