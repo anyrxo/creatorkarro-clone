@@ -184,6 +184,7 @@ export default function LearningDashboard() {
                             <CourseCard
                                 {...course}
                                 progress={getCourseProgress(course.id)}
+                                resourcesLink={`/learning/${course.id}/resources`}
                             />
                         </motion.div>
                     ))}

@@ -266,6 +266,16 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
 
     if (newUnlocks.length > 0) {
       await supabase.from('user_achievements').insert(newUnlocks)
+
+      // Trigger Email for the first unlocked achievement in this batch
+      // (To avoid spamming if multiple unlock at once, though SmartEmailSystem handles throttling too)
+      const { triggerSmartEmail } = await import('@/app/actions/email-triggers')
+      const firstAchievementId = newUnlocks[0].achievement_id
+      const achievement = allAchievements.find(a => a.id === firstAchievementId)
+
+      if (achievement) {
+        await triggerSmartEmail('achievement_unlocked', { achievementName: achievement.title })
+      }
     }
   }
 
@@ -310,6 +320,15 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
 
       if (!error && data) {
         setStats(data)
+
+        // Trigger Streak Email if streak increased
+        if (newStreak > stats.current_streak) {
+          const { triggerSmartEmail } = await import('@/app/actions/email-triggers')
+          // Trigger for every 3, 7, 14, 30, etc days
+          if ([3, 7, 14, 30, 60, 90, 100, 365].includes(newStreak)) {
+            await triggerSmartEmail('streak_milestone', { streakDays: newStreak })
+          }
+        }
       }
 
       return newStreak

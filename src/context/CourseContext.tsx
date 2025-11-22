@@ -116,6 +116,43 @@ export function CourseProvider({ children }: { children: ReactNode }) {
                 await awardXP(XP_REWARDS.LESSON_COMPLETE, 'lesson_complete')
                 await updateStreak()
 
+                // Check for Email Triggers
+                // We calculate what the NEW progress is (assuming this lesson wasn't already complete)
+                if (!completedLessons.includes(uniqueLessonId)) {
+                    const { triggerSmartEmail } = await import('@/app/actions/email-triggers')
+
+                    const course = learningContent[courseId]
+                    if (course) {
+                        let totalLessons = 0
+                        let completedCount = 0
+
+                        // Count total and completed (including this new one)
+                        course.modules.forEach(m => {
+                            m.lessons.forEach(l => {
+                                totalLessons++
+                                const lid = `${courseId}::${l.id}`
+                                if (lid === uniqueLessonId || completedLessons.includes(lid)) {
+                                    completedCount++
+                                }
+                            })
+                        })
+
+                        const progress = Math.round((completedCount / totalLessons) * 100)
+
+                        if (completedCount === 1) {
+                            await triggerSmartEmail('course_start', { courseId })
+                        } else if (progress === 25) {
+                            await triggerSmartEmail('course_progress_25', { courseId })
+                        } else if (progress === 50) {
+                            await triggerSmartEmail('course_progress_50', { courseId })
+                        } else if (progress === 75) {
+                            await triggerSmartEmail('course_progress_75', { courseId })
+                        } else if (progress === 100) {
+                            await triggerSmartEmail('course_complete', { courseId })
+                        }
+                    }
+                }
+
             } catch (err) {
                 console.error('Failed to save to Supabase:', err)
             }

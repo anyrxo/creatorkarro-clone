@@ -1,8 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Sparkles } from 'lucide-react'
 import React, { useRef } from 'react'
 
 interface CourseCardProps {
@@ -14,6 +15,7 @@ interface CourseCardProps {
     icon: React.ReactNode
     moduleCount: number
     href: string
+    resourcesLink?: string
 }
 
 export default function CourseCard({
@@ -24,9 +26,11 @@ export default function CourseCard({
     gradient,
     icon,
     moduleCount,
-    href
+    href,
+    resourcesLink
 }: CourseCardProps) {
     const ref = useRef<HTMLDivElement>(null)
+    const router = useRouter()
 
     const x = useMotionValue(0)
     const y = useMotionValue(0)
@@ -60,8 +64,12 @@ export default function CourseCard({
         y.set(0)
     }
 
+    const handleCardClick = () => {
+        router.push(href)
+    }
+
     return (
-        <Link href={href} className="block group perspective-1000">
+        <div onClick={handleCardClick} className="block group perspective-1000 cursor-pointer">
             <motion.div
                 ref={ref}
                 onMouseMove={handleMouseMove}
@@ -116,13 +124,28 @@ export default function CourseCard({
                         </div>
                     </div>
 
-                    {/* CTA */}
-                    <div className="mt-6 flex items-center gap-2 text-sm font-bold text-white opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                        <span>Enter Course</span>
-                        <ArrowRight className="w-4 h-4" />
+                    {/* CTA Buttons */}
+                    <div className="mt-6 flex items-center justify-between opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                        <div className="flex items-center gap-2 text-sm font-bold text-white">
+                            <span>Enter Course</span>
+                            <ArrowRight className="w-4 h-4" />
+                        </div>
+
+                        {resourcesLink && (
+                            <div
+                                onClick={(e) => {
+                                    e.stopPropagation()
+                                    router.push(resourcesLink)
+                                }}
+                                className="flex items-center gap-1.5 text-xs font-bold text-zinc-400 hover:text-white bg-white/5 hover:bg-white/10 px-3 py-2 rounded-lg transition-colors"
+                            >
+                                <Sparkles className="w-3 h-3" />
+                                Resources
+                            </div>
+                        )}
                     </div>
                 </div>
             </motion.div>
-        </Link>
+        </div>
     )
 }

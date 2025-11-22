@@ -122,7 +122,7 @@ export default function CourseOverviewPage() {
                                 </Link>
                                 <Link
                                     href={`/learning/${courseId}/resources`}
-                                    className="w-full flex items-center justify-center gap-2 bg-purple-500/10 hover:bg-purple-500/20 border border-purple-500/30 text-purple-200 py-3 rounded-xl font-medium transition-colors"
+                                    className="w-full flex items-center justify-center gap-2 bg-purple-500/10 hover:bg-purple-500/20 border border-purple-500/30 text-purple-200 py-3 rounded-xl font-medium transition-colors mt-3"
                                 >
                                     <Sparkles className="w-4 h-4" />
                                     Resources & Tools
@@ -244,13 +244,13 @@ export default function CourseOverviewPage() {
                                                             key={lesson.id}
                                                             href={`/learning/${courseId}/${courseModule.id}/${lesson.id}`}
                                                             className={`flex items-center gap-4 p-4 rounded-xl transition-all ${isLessonCompleted
-                                                                    ? 'bg-green-500/5 hover:bg-green-500/10 text-green-100'
-                                                                    : 'hover:bg-white/5 text-zinc-300'
+                                                                ? 'bg-green-500/5 hover:bg-green-500/10 text-green-100'
+                                                                : 'hover:bg-white/5 text-zinc-300'
                                                                 }`}
                                                         >
                                                             <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold border ${isLessonCompleted
-                                                                    ? 'bg-green-500/20 border-green-500/30 text-green-400'
-                                                                    : 'bg-white/5 border-white/10 text-zinc-500'
+                                                                ? 'bg-green-500/20 border-green-500/30 text-green-400'
+                                                                : 'bg-white/5 border-white/10 text-zinc-500'
                                                                 }`}>
                                                                 {isLessonCompleted ? <CheckCircle className="w-4 h-4" /> : lIndex + 1}
                                                             </div>
