@@ -22,10 +22,11 @@ export async function getStudents() {
         { auth: { persistSession: false } }
     )
 
-    // 1. Fetch License Keys with Profiles
-    const { data: keys, error } = await supabaseAdmin
-        .from('license_keys')
-        .select('*, profiles:user_id(is_admin)')
+    // 1. Fetch All Profiles (Users)
+    // We fetch profiles as the source of truth for users.
+    const { data: profiles, error } = await supabaseAdmin
+        .from('profiles')
+        .select('*, license_keys(id, key, status, plan_type)')
         .order('created_at', { ascending: false })
 
     if (error) {
@@ -33,27 +34,62 @@ export async function getStudents() {
         return []
     }
 
-    // 2. Fetch Affiliate Profiles (Manual Join)
-    // We fetch all affiliate profiles to map them to users. 
-    // This is efficient enough for < 1000 users. For larger scale, we'd use a view or RPC.
+    // 2. Fetch Affiliate Profiles
     const { data: affiliateProfiles } = await supabaseAdmin
         .from('affiliate_profiles')
         .select('user_id, code')
 
     const affiliateMap = new Map(affiliateProfiles?.map(p => [p.user_id, p.code]) || [])
 
-    // Filter: Show claimed keys OR keys with an email attached (invites)
-    const filteredData = keys.filter((k: any) =>
-        k.status === 'claimed' || k.redeemed_by_email || k.email
-    )
+    // 3. Fetch Unclaimed Invites (Keys with email but no user_id)
+    // These are "Pending Students" who haven't signed up yet.
+    const { data: invites } = await supabaseAdmin
+        .from('license_keys')
+        .select('*')
+        .is('user_id', null)
+        .not('redeemed_by_email', 'is', null)
 
-    // Map to a cleaner format
-    return filteredData.map((k: any) => ({
-        ...k,
-        email: k.redeemed_by_email || k.email, // Normalize email
-        is_admin: k.profiles?.is_admin || false,
-        affiliate_code: k.user_id ? affiliateMap.get(k.user_id) : null
-    }))
+    // Combine Profiles and Invites
+    const students = profiles.map((p: any) => {
+        const license = p.license_keys?.[0] // Assume 1 key per user for now
+        return {
+            id: license?.id || `user-${p.user_id}`, // Fallback ID
+            user_id: p.user_id,
+            email: p.email,
+            first_name: p.first_name,
+            last_name: p.last_name,
+            key: license?.key || 'No Key',
+            status: license?.status || 'free', // 'free' if no key
+            plan_type: license?.plan_type || 'Free Tier',
+            created_at: p.created_at,
+            is_admin: p.is_admin || false,
+            affiliate_code: affiliateMap.get(p.user_id) || null
+        }
+    })
+
+    // Add Invites to the list
+    if (invites) {
+        invites.forEach((invite: any) => {
+            students.push({
+                id: invite.id,
+                user_id: null,
+                email: invite.redeemed_by_email,
+                first_name: 'Pending',
+                last_name: 'Invite',
+                key: invite.key,
+                status: 'invited',
+                plan_type: invite.plan_type,
+                created_at: invite.created_at,
+                is_admin: false,
+                affiliate_code: null
+            })
+        })
+    }
+
+    // Sort by date (newest first)
+    return students.sort((a: any, b: any) =>
+        new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+    )
 }
 
 // ... (inviteStudent, revokeAccess, deleteUser remain unchanged) ...

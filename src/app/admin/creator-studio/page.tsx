@@ -30,7 +30,9 @@ export default function CreatorStudioPage() {
     const selectedModule = modules.find(m => m.id === selectedModuleId)
     const lessons = selectedModule?.lessons || []
     const selectedLesson = lessons.find(l => l.id === selectedLessonId)
-    const scriptData = selectedLessonId ? creatorScripts[selectedLessonId] : null
+    // Use composite key to avoid collisions, fallback to simple ID for backward compatibility
+    const scriptKey = selectedCourseId && selectedLessonId ? `${selectedCourseId}::${selectedLessonId}` : selectedLessonId
+    const scriptData = scriptKey ? (creatorScripts[scriptKey] || creatorScripts[selectedLessonId]) : null
 
     // Auto-select logic
     useEffect(() => {

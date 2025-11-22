@@ -176,7 +176,22 @@ export const learningContent: Record<string, CourseContent> = {
                 lessons: [
                     { id: '1-1', title: 'Flux & SDXL Setup', duration: '20:00', type: 'video' },
                     { id: '1-2', title: 'Hardware Requirements (GPU Guide)', duration: '15:00', type: 'video' },
-                    { id: '1-3', title: 'Prompt Engineering 101', duration: '25:00', type: 'video' }
+                    { id: '1-3', title: 'Prompt Engineering 101', duration: '25:00', type: 'video' },
+                    {
+                        id: '1-4',
+                        title: 'Navigating CivitAI & HuggingFace',
+                        duration: '15:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Create a CivitAI account' },
+                            { id: 'a2', text: 'Download your first Checkpoint (Model)' },
+                            { id: 'a3', text: 'Download a LoRA for style' }
+                        ],
+                        resources: [
+                            { title: 'CivitAI (Model Repository)', type: 'link', url: 'https://civitai.com' },
+                            { title: 'HuggingFace (The AI Hub)', type: 'link', url: 'https://huggingface.co' }
+                        ]
+                    }
                 ]
             },
             {
@@ -195,7 +210,21 @@ export const learningContent: Record<string, CourseContent> = {
                     { id: '3-1', title: 'Photorealism Secrets', duration: '22:00', type: 'video' },
                     { id: '3-2', title: 'AI Video Generation (Kling/Runway)', duration: '20:00', type: 'video' },
                     { id: '3-3', title: 'Voice Cloning (ElevenLabs)', duration: '15:00', type: 'video' },
-                    { id: '3-4', title: 'Deepfakes & Face Swap (Akool)', duration: '18:00', type: 'video' }
+                    { id: '3-4', title: 'Deepfakes & Face Swap (Akool)', duration: '18:00', type: 'video' },
+                    {
+                        id: '3-5',
+                        title: 'Lip Sync Perfected (Wav2Lip)',
+                        duration: '20:00',
+                        type: 'video',
+                        resources: [
+                            { title: 'Wav2Lip Colab Notebook', type: 'link', url: 'https://colab.research.google.com/drive/1tZpDWXz49W6wIS-yJCVseVyUXNkSpO_W' },
+                            { title: 'SadTalker (Alternative)', type: 'link', url: 'https://github.com/OpenTalker/SadTalker' }
+                        ],
+                        actionItems: [
+                            { id: 'a1', text: 'Record a voiceover' },
+                            { id: 'a2', text: 'Generate a lip-sync video using Wav2Lip' }
+                        ]
+                    }
                 ]
             },
             {

@@ -20,7 +20,7 @@ export default function AdminLayout({
     useEffect(() => {
         async function verifyAdmin() {
             if (!isLoaded) return
-            
+
             if (!isSignedIn) {
                 setIsChecking(false)
                 return
@@ -32,7 +32,7 @@ export default function AdminLayout({
             }
             setIsChecking(false)
         }
-        
+
         verifyAdmin()
     }, [isLoaded, isSignedIn])
 
@@ -83,6 +83,10 @@ export default function AdminLayout({
                     <Link href="/admin/users" className="flex items-center gap-3 px-4 py-3 rounded-lg text-zinc-400 hover:text-white hover:bg-white/5 transition-colors">
                         <Users className="w-5 h-5" />
                         Students
+                    </Link>
+                    <Link href="/admin/creator-studio" className="flex items-center gap-3 px-4 py-3 rounded-lg text-zinc-400 hover:text-white hover:bg-white/5 transition-colors">
+                        <Monitor className="w-5 h-5" />
+                        Creator Studio
                     </Link>
                     <Link href="/admin/settings" className="flex items-center gap-3 px-4 py-3 rounded-lg text-zinc-400 hover:text-white hover:bg-white/5 transition-colors">
                         <Settings className="w-5 h-5" />

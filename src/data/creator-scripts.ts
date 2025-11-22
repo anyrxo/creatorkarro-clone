@@ -3837,5 +3837,523 @@ And start the next game.
 
 👉 **ACTION:** Calculate your current 'Enterprise Value' (Annual Profit x 3)."
         `
+    },
+    // ==========================================
+    // INSTAGRAM IGNITED - PHASE 5
+    // ==========================================
+    'instagram-ignited::5-1': {
+        lessonId: '5-1',
+        videoTitle: 'Story Selling',
+        slides: [
+            { title: 'The Bridge', bullets: ['Current State (Pain)', 'Desired State (Pleasure)', 'The Bridge (Your Product)'], visualCue: 'Bridge diagram' }
+        ],
+        script: `
+**(Intro)**
+"People don't buy products. They buy transformations.
+Stop selling the plane ticket. Sell the vacation.
+We use **Story Selling**."
+
+**(Slide: The Bridge)**
+"Your customer is on an island of Pain.
+They want to be on the island of Pleasure.
+Your product is simply the Bridge.
+Don't talk about the wood and nails of the bridge. Talk about how nice the other island is."
+        `
+    },
+    'instagram-ignited::5-2': {
+        lessonId: '5-2',
+        videoTitle: 'Building a Cult',
+        slides: [
+            { title: 'Us vs Them', bullets: ['Define the enemy', 'Create a common language', 'Rituals'], visualCue: 'Cult leader icon' }
+        ],
+        script: `
+**(Intro)**
+"The strongest brands are cults. Apple. Tesla. Crossfit.
+They have an enemy. They have a language.
+You need to build a **Cult**."
+
+**(Slide: Us vs Them)**
+"Who is the enemy?
+If you are Apple, the enemy is 'Boring PC Users'.
+Define who you are NOT. It makes your tribe stronger."
+        `
+    },
+    // ==========================================
+    // AI INFLUENCERS - MODULE 1
+    // ==========================================
+    'ai-influencers::1-1': {
+        lessonId: '1-1',
+        videoTitle: 'Flux & SDXL Setup',
+        slides: [
+            { title: 'The Stack', bullets: ['Flux (Base Model)', 'ComfyUI (Interface)', 'CivitAI (Resources)'], visualCue: 'Tech stack diagram' }
+        ],
+        script: `
+**(Intro)**
+"Welcome to the future. We are building a virtual human.
+We use **Flux** because it is the state of the art.
+Forget Midjourney. We need control."
+
+**(Slide: The Stack)**
+"We use ComfyUI. It looks scary. It's nodes and wires.
+But it gives you god-like power over the image.
+Follow my screen exactly."
+        `
+    },
+    'ai-influencers::1-4': {
+        lessonId: '1-4',
+        videoTitle: 'Navigating CivitAI & HuggingFace',
+        slides: [
+            { title: 'CivitAI', bullets: ['Checkpoints (Base)', 'LoRAs (Style/Face)', 'Poses'], visualCue: 'CivitAI screenshot' }
+        ],
+        script: `
+**(Intro)**
+"CivitAI is the candy store.
+But be careful. It's messy.
+I'm going to show you how to find the gold."
+
+**(Slide: CivitAI)**
+"Look for 'Checkpoints' first. This is the brain.
+Then look for 'LoRAs'. These are the clothes and style.
+Download the 'SafeTensor' files. Put them in your models folder."
+        `
+    },
+    // ==========================================
+    // AI INFLUENCERS - MODULE 3
+    // ==========================================
+    'ai-influencers::3-5': {
+        lessonId: '3-5',
+        videoTitle: 'Lip Sync Perfected (Wav2Lip)',
+        slides: [
+            { title: 'The Uncanny Valley', bullets: ['Bad lip sync breaks immersion', 'Wav2Lip is the standard', 'SadTalker for movement'], visualCue: 'Robot face vs Human face' }
+        ],
+        script: `
+**(Intro)**
+"A silent influencer is useless.
+We need her to speak.
+But bad lip sync looks creepy.
+We use **Wav2Lip**."
+
+**(Slide: The Uncanny Valley)**
+"Upload your audio. Upload your video.
+Run the script.
+It maps the mouth shape to the phonemes.
+It's magic.
+👉 **ACTION:** Open the Colab notebook linked below."
+        `
+    },
+    // ==========================================
+    // AI INFLUENCERS - REMAINING MODULES
+    // ==========================================
+    'ai-influencers::1-2': {
+        lessonId: '1-2',
+        videoTitle: 'Hardware Requirements (GPU Guide)',
+        slides: [
+            { title: 'VRAM is King', bullets: ['Minimum 8GB VRAM', 'NVIDIA is mandatory (CUDA)', 'Mac M1/M2/M3 is okay but slower'], visualCue: 'GPU comparison chart' },
+            { title: 'Cloud Alternatives', bullets: ['RunPod ($0.40/hr)', 'Google Colab Pro', 'ThinkDiffusion'], visualCue: 'Cloud vs Local icon' }
+        ],
+        script: `
+**(Intro)**
+"You don't need a NASA supercomputer. But you do need a GPU.
+If you have a gaming PC, you are set.
+If not, we go to the cloud."
+
+**(Slide: VRAM is King)**
+"Stable Diffusion lives in VRAM.
+8GB is the floor. 12GB is the sweet spot. 24GB is god mode.
+Don't try this on a Chromebook."
+        `
+    },
+    'ai-influencers::2-1': {
+        lessonId: '2-1',
+        videoTitle: 'Creating the Persona',
+        slides: [
+            { title: 'The Backstory', bullets: ['Name, Age, Location', 'Personality Traits', 'Hobbies & Interests'], visualCue: 'Character sheet' },
+            { title: 'Visual Identity', bullets: ['Hair color/style', 'Eye shape', 'Fashion style'], visualCue: 'Moodboard' }
+        ],
+        script: `
+**(Intro)**
+"Before we generate a pixel, we generate a soul.
+Who is she? What does she love? What does she hate?
+A pretty face is not enough. You need a character."
+
+**(Slide: The Backstory)**
+"Write her biography.
+Is she a fitness freak from Miami?
+Is she a gamer from Tokyo?
+This dictates every image you will ever generate."
+        `
+    },
+    'ai-influencers::2-2': {
+        lessonId: '2-2',
+        videoTitle: 'Consistent Faces (LoRA Training)',
+        slides: [
+            { title: 'The Consistency Problem', bullets: ['AI generates random faces', 'We need the SAME face every time', 'Solution: Train a LoRA'], visualCue: 'Face grid (Same vs Different)' },
+            { title: 'Dataset Preparation', bullets: ['15-20 high quality images', 'Different angles/lighting', 'Close-ups and full body'], visualCue: 'Folder of images' }
+        ],
+        script: `
+**(Intro)**
+"The holy grail of AI influencers is Consistency.
+If she looks different in every photo, the illusion breaks.
+We solve this by training a LoRA."
+
+**(Slide: Dataset Preparation)**
+"Garbage in, garbage out.
+We need 20 perfect images.
+I will show you how to generate a 'synthetic dataset' to train your model on itself."
+        `
+    },
+    'ai-influencers::2-3': {
+        lessonId: '2-3',
+        videoTitle: 'Body Consistency (ControlNet)',
+        slides: [
+            { title: 'ControlNet OpenPose', bullets: ['Copy the pose from a reference', 'Keep the character consistent', 'Perfect for complex actions'], visualCue: 'Skeleton overlay on image' },
+            { title: 'Canny & Depth', bullets: ['Copy the outline', 'Copy the 3D structure', 'Advanced control'], visualCue: 'Edge detection example' }
+        ],
+        script: `
+**(Intro)**
+"Prompting 'girl doing yoga' gives you a random pose.
+We want a SPECIFIC pose.
+Enter ControlNet. It is the puppet master."
+
+**(Slide: ControlNet OpenPose)**
+"Find a photo of a real model doing the pose you want.
+Feed it into ControlNet.
+Your AI model will snap into that exact position. Magic."
+        `
+    },
+    'ai-influencers::3-1': {
+        lessonId: '3-1',
+        videoTitle: 'Photorealism Secrets',
+        slides: [
+            { title: 'Lighting & Camera', bullets: ['Golden Hour', 'Cinematic Lighting', '85mm Lens, f/1.8'], visualCue: 'Photography cheat sheet' },
+            { title: 'Skin Texture', bullets: ['Add "film grain"', 'Add "skin pores"', 'Avoid "smooth plastic" look'], visualCue: 'Skin close-up comparison' }
+        ],
+        script: `
+**(Intro)**
+"AI likes to make things smooth and shiny.
+Real life is messy and grainy.
+To fool the eye, we need to add imperfections."
+
+**(Slide: Lighting & Camera)**
+"Talk to the AI like a photographer.
+Don't just say 'pretty girl'.
+Say 'shot on Sony A7R IV, 85mm lens, soft lighting, 4k'."
+        `
+    },
+    'ai-influencers::3-2': {
+        lessonId: '3-2',
+        videoTitle: 'AI Video Generation',
+        slides: [
+            { title: 'Image to Video', bullets: ['Kling AI', 'Runway Gen-3', 'Luma Dream Machine'], visualCue: 'Video generation tools logos' },
+            { title: 'Motion Control', bullets: ['Camera movement', 'Subject movement', 'Consistency check'], visualCue: 'Motion brush demo' }
+        ],
+        script: `
+**(Intro)**
+"Photos are great. Video is viral.
+We use Image-to-Video tools to bring her to life.
+Kling is the current king."
+
+**(Slide: Image to Video)**
+"Take your best generated image.
+Upload it to Kling.
+Prompt: 'She smiles and waves at the camera'.
+Wait 2 minutes. You have a video."
+        `
+    },
+    'ai-influencers::3-3': {
+        lessonId: '3-3',
+        videoTitle: 'Voice Cloning',
+        slides: [
+            { title: 'ElevenLabs', bullets: ['Instant Voice Cloning', 'Emotion control', 'Multilingual'], visualCue: 'ElevenLabs interface' },
+            { title: 'Scripting for Voice', bullets: ['Add pauses (...)', 'Add breaths', 'Natural cadence'], visualCue: 'Script editor' }
+        ],
+        script: `
+**(Intro)**
+"She needs a voice.
+ElevenLabs is the only choice here.
+We can clone a real voice or design a new one."
+
+**(Slide: ElevenLabs)**
+"Find a voice sample you like (maybe your own, maybe a friend).
+Clone it.
+Now type anything, and she will say it with perfect emotion."
+        `
+    },
+    'ai-influencers::3-4': {
+        lessonId: '3-4',
+        videoTitle: 'Deepfakes & Face Swap',
+        slides: [
+            { title: 'Akool Face Swap', bullets: ['High quality', 'Video support', 'Easy to use'], visualCue: 'Face swap demo' },
+            { title: 'Ethical Use', bullets: ['Parody vs Deception', 'Disclosure', 'Platform rules'], visualCue: 'Warning sign' }
+        ],
+        script: `
+**(Intro)**
+"Sometimes you want to film yourself and just swap the face.
+It's faster than generating from scratch.
+We use Akool for this."
+
+**(Slide: Akool Face Swap)**
+"Upload a video of a real person (you or a hired actor).
+Upload the face of your AI character.
+Click Swap.
+The result is terrifyingly good."
+        `
+    },
+    'ai-influencers::4-1': {
+        lessonId: '4-1',
+        videoTitle: 'The "Thirst Trap" Funnel',
+        slides: [
+            { title: 'Attention vs Intention', bullets: ['Top of Funnel: Viral/Sexy', 'Middle of Funnel: Personality', 'Bottom of Funnel: Subscription'], visualCue: 'Funnel diagram' },
+            { title: 'Platform Hazard', bullets: ['TikTok bans nudity', 'Twitter allows it', 'Instagram is in between'], visualCue: 'Platform logos with risk levels' }
+        ],
+        script: `
+**(Intro)**
+"Let's be adults here. Sex sells.
+But you can't just post nudity on TikTok. You will be banned.
+You need to master the 'Suggestive' art."
+
+**(Slide: Attention vs Intention)**
+"Hook them with the visual.
+Keep them with the fantasy.
+Move them to the bio link."
+        `
+    },
+    'ai-influencers::4-2': {
+        lessonId: '4-2',
+        videoTitle: 'Twitter/X Strategy',
+        slides: [
+            { title: 'The Wild West', bullets: ['NSFW is allowed', 'High conversion to OF', 'Community engagement'], visualCue: 'Twitter logo' },
+            { title: 'Reply Guy Strategy', bullets: ['Reply to big accounts', 'Post photos in replies', 'Steal traffic'], visualCue: 'Reply thread example' }
+        ],
+        script: `
+**(Intro)**
+"Twitter (X) is the engine of the AI model economy.
+It is the only major platform that allows NSFW.
+This is where you make your money."
+
+**(Slide: The Wild West)**
+"Post 3-5 times a day.
+Mix SFW and NSFW (blurred).
+Drive traffic to your paid link."
+        `
+    },
+    'ai-influencers::4-3': {
+        lessonId: '4-3',
+        videoTitle: 'TikTok Viral Patterns',
+        slides: [
+            { title: 'The NPC Trend', bullets: ['Uncanny movement', 'Live streaming', 'Gifts'], visualCue: 'NPC stream screenshot' },
+            { title: 'The "Real or Fake" Debate', bullets: ['Make people argue', 'Is she real?', 'Viral comments'], visualCue: 'Comments section arguing' }
+        ],
+        script: `
+**(Intro)**
+"TikTok is for reach.
+The best way to go viral? Confusion.
+Make people question reality."
+
+**(Slide: The "Real or Fake" Debate)**
+"Post a video that looks 99% real but has one glitch.
+People will fight in the comments.
+'She's fake!' 'No she's real!'
+This fuels the algorithm."
+        `
+    },
+    'ai-influencers::5-1': {
+        lessonId: '5-1',
+        videoTitle: 'Platform Setup (Fanvue vs OF)',
+        slides: [
+            { title: 'Fanvue', bullets: ['AI Friendly', 'Lower fees', 'Features for AI creators'], visualCue: 'Fanvue logo' },
+            { title: 'OnlyFans', bullets: ['Biggest traffic', 'Hates AI (Risk of ban)', 'Strict verification'], visualCue: 'OnlyFans logo' }
+        ],
+        script: `
+**(Intro)**
+"Where do you collect the cash?
+OnlyFans is the giant, but they don't like AI.
+Fanvue is the challenger, and they love AI."
+
+**(Slide: Fanvue)**
+"I recommend Fanvue for AI models.
+They have specific features for us.
+They won't ban you for being generated.
+Setup is easy."
+        `
+    },
+    'ai-influencers::5-2': {
+        lessonId: '5-2',
+        videoTitle: 'Subscription Psychology',
+        slides: [
+            { title: 'The Low Entry', bullets: ['$5 - $10 subscription', 'Get them in the door', 'Upsell in DMs'], visualCue: 'Price tag' },
+            { title: 'The Para-Social Bond', bullets: ['Good morning messages', 'Personalized voice notes', 'The "Girlfriend Experience"'], visualCue: 'Chat window' }
+        ],
+        script: `
+**(Intro)**
+"Why do people pay?
+They are lonely. They want connection.
+You are selling a fantasy relationship."
+
+**(Slide: The Low Entry)**
+"Don't charge $50/month. Charge $5.
+Volume is key.
+Once they are in, you sell them PPV (Pay Per View) content for $20, $50, $100."
+        `
+    },
+    'ai-influencers::5-3': {
+        lessonId: '5-3',
+        videoTitle: 'PPV Strategy',
+        slides: [
+            { title: 'Locked Content', bullets: ['Send mass DM', 'Blur the image', 'Tease the content'], visualCue: 'Locked message icon' },
+            { title: 'Pricing Ladder', bullets: ['$10 for photo', '$30 for video', '$100 for custom'], visualCue: 'Ladder diagram' }
+        ],
+        script: `
+**(Intro)**
+"Subscriptions pay the rent. PPVs buy the Lambo.
+You make 80% of your revenue in the DMs."
+
+**(Slide: Locked Content)**
+"Send a message to all subscribers.
+'I made a special video for you...'
+Lock it behind $25.
+If you have 1000 subs and 5% buy, that's $1,250 in one click."
+        `
+    },
+    'ai-influencers::5-4': {
+        lessonId: '5-4',
+        videoTitle: 'Chatting Scripts',
+        slides: [
+            { title: 'The GFE (Girlfriend Experience)', bullets: ['Ask about their day', 'Remember details', 'Be supportive'], visualCue: 'Heart emoji' },
+            { title: 'Automation', bullets: ['Use chatters (VAs)', 'Use AI chat bots', 'Scale the intimacy'], visualCue: 'Robot typing' }
+        ],
+        script: `
+**(Intro)**
+"You can't chat with 1000 men all day.
+You need a system.
+Or you need AI."
+
+**(Slide: Automation)**
+"We use AI chatbots to handle the small talk.
+They can be trained on her personality.
+They never sleep. They never get tired. They just sell."
+        `
+    },
+    // ==========================================
+    // DIGITAL PRODUCTS EMPIRE
+    // ==========================================
+    'digital-products::1-1': {
+        lessonId: '1-1',
+        videoTitle: 'Finding the "Bleeding Neck" Problem',
+        slides: [
+            { title: 'Pain vs Inconvenience', bullets: ['Inconvenience: "I want to learn Spanish"', 'Pain: "I need Spanish for my job interview tomorrow"', 'Sell to Pain'], visualCue: 'Bandage icon' },
+            { title: 'The 3 Markets', bullets: ['Health', 'Wealth', 'Relationships'], visualCue: 'Venn diagram' }
+        ],
+        script: `
+**(Intro)**
+"People don't buy 'nice to have'. They buy 'need to have'.
+You need to find a Bleeding Neck problem.
+If someone is bleeding, they don't ask the price of the bandage."
+
+**(Slide: The 3 Markets)**
+"Stick to the Big 3.
+Health (Weight loss, muscle).
+Wealth (Make money, save money).
+Relationships (Dating, marriage).
+Everything else is a hobby."
+        `
+    },
+    'digital-products::1-2': {
+        lessonId: '1-2',
+        videoTitle: 'The "Pre-Sell" Method',
+        slides: [
+            { title: 'Sell Before You Build', bullets: ['Validate demand', 'Get paid to create', 'Avoid wasted time'], visualCue: 'Money hand icon' },
+            { title: 'The Beta Launch', bullets: ['"I am thinking of making X"', '"Who would be interested?"', 'Collect emails'], visualCue: 'Waitlist form' }
+        ],
+        script: `
+**(Intro)**
+"Don't spend 3 months writing an ebook nobody wants.
+Sell it first.
+If nobody buys, you saved 3 months."
+
+**(Slide: The Beta Launch)**
+"Post on your social media:
+'I'm building a guide on X. It will cover Y and Z.
+I'm looking for 10 beta testers at 50% off.
+DM me "BETA" if interested.'
+If you get DMs, build it."
+        `
+    },
+    'digital-products::1-3': {
+        lessonId: '1-3',
+        videoTitle: 'Competitor Analysis',
+        slides: [
+            { title: 'Read the 1-Star Reviews', bullets: ['Go to Amazon/Udemy', 'See what people hated', 'Fix that in your product'], visualCue: 'Star rating' },
+            { title: 'The Gap', bullets: ['What are they missing?', 'Is it outdated?', 'Is it too boring?'], visualCue: 'Missing puzzle piece' }
+        ],
+        script: `
+**(Intro)**
+"Your competitors are your best teachers.
+They have already spent money to find out what works.
+Steal their lessons."
+
+**(Slide: Read the 1-Star Reviews)**
+"Go to the best-selling book in your niche.
+Read the bad reviews.
+'Too theoretical.' 'No examples.' 'Hard to read.'
+Make your product practical, full of examples, and easy to read. You win."
+        `
+    },
+    'digital-products::2-1': {
+        lessonId: '2-1',
+        videoTitle: 'The Ebook/Guide Blueprint',
+        slides: [{ title: 'Structure', bullets: ['Problem -> Agitation -> Solution', 'Action Steps', 'Resources'], visualCue: 'Book layout' }],
+        script: `**(Intro)** "Writing a book is hard. Writing a Guide is easy. Focus on solving the problem, not hitting a word count."`
+    },
+    'digital-products::3-1': {
+        lessonId: '3-1',
+        videoTitle: 'Landing Page Psychology',
+        slides: [{ title: 'Above the Fold', bullets: ['Headline', 'Sub-headline', 'CTA'], visualCue: 'Website mockup' }],
+        script: `**(Intro)** "Your landing page has one job: Get the email or get the sale. Remove the navigation bar. Remove distractions."`
+    },
+    'digital-products::4-1': {
+        lessonId: '4-1',
+        videoTitle: 'Organic Launch Strategy',
+        slides: [{ title: 'The Hype Cycle', bullets: ['Tease (7 days out)', 'Reveal (3 days out)', 'Launch (Day 0)'], visualCue: 'Calendar' }],
+        script: `**(Intro)** "Don't just drop the link. Build anticipation. Make them beg for it."`
+    },
+    'digital-products::5-1': {
+        lessonId: '5-1',
+        videoTitle: 'The Value Ladder',
+        slides: [{ title: 'Ascension', bullets: ['Freebie -> Low Ticket ($27) -> High Ticket ($997)'], visualCue: 'Stairs diagram' }],
+        script: `**(Intro)** "The ebook is just the handshake. The real money is in the backend. Upsell them to coaching."`
+    },
+    // ==========================================
+    // AI AUTOMATIONS REIMAGINED
+    // ==========================================
+    'ai-automations::1-1': {
+        lessonId: '1-1',
+        videoTitle: 'The Agency Model',
+        slides: [{ title: 'Service vs SaaS', bullets: ['SaaS is hard', 'Service is fast cash', 'AI Agency = Service + Software'], visualCue: 'Scale' }],
+        script: `**(Intro)** "Welcome to the Agency. We don't sell time. We sell results. We use AI to deliver those results instantly."`
+    },
+    'ai-automations::2-1': {
+        lessonId: '2-1',
+        videoTitle: 'N8N Mastery',
+        slides: [{ title: 'Why N8N?', bullets: ['Self-hosted (Cheap)', 'Powerful', 'Visual builder'], visualCue: 'N8N logo' }],
+        script: `**(Intro)** "Zapier gets expensive. N8N is the pro tool. It connects everything to everything."`
+    },
+    'ai-automations::3-1': {
+        lessonId: '3-1',
+        videoTitle: 'Customer Support Bots',
+        slides: [{ title: 'The Offer', bullets: ['24/7 Support', 'Instant replies', 'Reduce support costs'], visualCue: 'Chatbot icon' }],
+        script: `**(Intro)** "Every business hates answering the same questions. Sell them a bot that does it for them. It's an easy $1k/mo."`
+    },
+    'ai-automations::4-1': {
+        lessonId: '4-1',
+        videoTitle: 'Lead Scraping & Enrichment',
+        slides: [{ title: 'Data is Gold', bullets: ['Scrape leads', 'Enrich with AI', 'Personalize outreach'], visualCue: 'Database icon' }],
+        script: `**(Intro)** "Cold outreach works if it's personalized. We use AI to write a unique email for every single lead."`
+    },
+    'ai-automations::5-1': {
+        lessonId: '5-1',
+        videoTitle: 'Cold Outreach Systems',
+        slides: [{ title: 'Volume + Relevance', bullets: ['Send 1000 emails/day', 'Don\'t spam', 'Provide value'], visualCue: 'Email icon' }],
+        script: `**(Intro)** "You have the service. Now you need clients. We build a cold email machine that prints meetings."`
     }
 }

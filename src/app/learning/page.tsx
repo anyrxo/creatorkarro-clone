@@ -39,7 +39,7 @@ export default function LearningDashboard() {
             title: 'Instagram Ignited', description: 'The 0 to 500K Follower System. Master viral hooks, algorithm domination, and monetization strategies.',
             gradient: 'from-red-500 to-orange-500',
             icon: <Instagram className="w-6 h-6 text-red-400" />,
-            moduleCount: 4,
+            moduleCount: 5,
             href: '/learning/instagram-ignited'
         },
         {
@@ -48,7 +48,7 @@ export default function LearningDashboard() {
             description: 'Build a scalable empire with virtual models. Create photorealistic characters and monetize without showing your face.',
             gradient: 'from-pink-500 to-purple-500',
             icon: <Bot className="w-6 h-6 text-pink-400" />,
-            moduleCount: 6,
+            moduleCount: 5,
             href: '/learning/ai-influencers'
         },
         {
@@ -57,7 +57,7 @@ export default function LearningDashboard() {
             description: 'Turn knowledge into a \+ digital empire. Build once, sell forever with automated funnels.',
             gradient: 'from-green-500 to-emerald-500',
             icon: <Package className="w-6 h-6 text-green-400" />,
-            moduleCount: 8,
+            moduleCount: 5,
             href: '/learning/digital-products'
         },
         {
@@ -66,7 +66,7 @@ export default function LearningDashboard() {
             description: 'The 6-Figure Agency Model. Build intelligent chatbots and workflows for high-ticket monthly retainers.',
             gradient: 'from-orange-500 to-amber-500',
             icon: <Workflow className="w-6 h-6 text-orange-400" />,
-            moduleCount: 6,
+            moduleCount: 5,
             href: '/learning/ai-automations'
         }
     ]
