@@ -136,14 +136,14 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
         .on(
           'postgres_changes',
           { event: '*', schema: 'public', table: 'user_stats', filter: `user_id=eq.${user.id}` },
-          (payload) => {
+          (payload: any) => {
             setStats(payload.new as UserStats)
           }
         )
         .on(
           'postgres_changes',
           { event: 'INSERT', schema: 'public', table: 'user_achievements', filter: `user_id=eq.${user.id}` },
-          (payload) => {
+          (payload: any) => {
             // Refresh achievements to get the joined data
             refreshStats()
             // TODO: Trigger Toast/Notification for Achievement Unlocked
@@ -271,7 +271,7 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
       // (To avoid spamming if multiple unlock at once, though SmartEmailSystem handles throttling too)
       const { triggerSmartEmail } = await import('@/app/actions/email-triggers')
       const firstAchievementId = newUnlocks[0].achievement_id
-      const achievement = allAchievements.find(a => a.id === firstAchievementId)
+      const achievement = allAchievements.find((a: any) => a.id === firstAchievementId)
 
       if (achievement) {
         await triggerSmartEmail('achievement_unlocked', { achievementName: achievement.title })
