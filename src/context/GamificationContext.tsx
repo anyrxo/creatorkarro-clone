@@ -137,6 +137,10 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
     }
   }, [user])
 
+  const refreshStats = useCallback(async () => {
+    await fetchStats()
+  }, [fetchStats])
+
   useEffect(() => {
     if (isLoaded && user) {
       fetchStats()
@@ -166,7 +170,7 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
         supabase.removeChannel(channel)
       }
     }
-  }, [user, isLoaded, fetchStats])
+  }, [user, isLoaded, fetchStats, refreshStats])
 
   const awardXP = async (amount: number, reason: string) => {
     if (!user || !stats) return
@@ -352,9 +356,7 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
     }
   }
 
-  const refreshStats = async () => {
-    await fetchStats()
-  }
+
 
   return (
     <GamificationContext.Provider value={{

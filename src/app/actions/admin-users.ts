@@ -24,6 +24,7 @@ export async function getStudents() {
 
     // 1. Fetch All Profiles (Users)
     // We fetch profiles as the source of truth for users.
+    console.log('[Admin] Fetching profiles...')
     const { data: profiles, error } = await supabaseAdmin
         .from('profiles')
         .select('*, license_keys(id, key, status, plan_type)')
@@ -33,6 +34,7 @@ export async function getStudents() {
         console.error('getStudents error:', error)
         return []
     }
+    console.log('[Admin] Profiles found:', profiles?.length || 0)
 
     // 2. Fetch Affiliate Profiles
     const { data: affiliateProfiles } = await supabaseAdmin
@@ -47,7 +49,7 @@ export async function getStudents() {
         .from('license_keys')
         .select('*')
         .is('user_id', null)
-        .not('redeemed_by_email', 'is', null)
+    // Fetch all unclaimed keys, we'll filter in code
 
     // Combine Profiles and Invites
     const students = profiles.map((p: any) => {
@@ -70,19 +72,24 @@ export async function getStudents() {
     // Add Invites to the list
     if (invites) {
         invites.forEach((invite: any) => {
-            students.push({
-                id: invite.id,
-                user_id: null,
-                email: invite.redeemed_by_email,
-                first_name: 'Pending',
-                last_name: 'Invite',
-                key: invite.key,
-                status: 'invited',
-                plan_type: invite.plan_type,
-                created_at: invite.created_at,
-                is_admin: false,
-                affiliate_code: null
-            })
+            // Check if it's an invite (has email)
+            const inviteEmail = invite.redeemed_by_email || invite.email
+
+            if (inviteEmail) {
+                students.push({
+                    id: invite.id,
+                    user_id: null,
+                    email: inviteEmail,
+                    first_name: 'Pending',
+                    last_name: 'Invite',
+                    key: invite.key,
+                    status: 'invited',
+                    plan_type: invite.plan_type,
+                    created_at: invite.created_at,
+                    is_admin: false,
+                    affiliate_code: null
+                })
+            }
         })
     }
 
