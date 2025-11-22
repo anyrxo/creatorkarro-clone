@@ -90,6 +90,7 @@ export async function POST(req: Request) {
       return new Response('No email found', { status: 200 }) // Return 200 to stop retry
     }
 
+    // ... existing profile upsert ...
     const { error } = await supabaseAdmin
       .from('profiles')
       .upsert({
@@ -107,8 +108,36 @@ export async function POST(req: Request) {
 
     console.log(`Successfully synced user ${id} to Supabase`)
 
+    // LINK LICENSE KEYS: Check if there's a pending invite for this email
+    // We check both 'email' and 'redeemed_by_email' columns just to be safe
+    const { data: pendingKeys } = await supabaseAdmin
+      .from('license_keys')
+      .select('id, plan_type')
+      .is('user_id', null)
+      .or(`email.eq.${email},redeemed_by_email.eq.${email}`)
+
+    if (pendingKeys && pendingKeys.length > 0) {
+      console.log(`Found ${pendingKeys.length} pending keys for ${email}. Linking...`)
+
+      const { error: linkError } = await supabaseAdmin
+        .from('license_keys')
+        .update({
+          user_id: id,
+          status: 'active',
+          claimed_at: new Date().toISOString()
+        })
+        .in('id', pendingKeys.map(k => k.id))
+
+      if (linkError) {
+        console.error('Error linking license keys:', linkError)
+      } else {
+        console.log(`Successfully linked keys to user ${id}`)
+      }
+    }
+
     // Send Welcome Email for New Users (Free Tier) on user.created
-    if (eventType === 'user.created') {
+    // Only send if they didn't just claim a paid key (to avoid double emails)
+    if (eventType === 'user.created' && (!pendingKeys || pendingKeys.length === 0)) {
       try {
         if (resend) {
           await resend.emails.send({
