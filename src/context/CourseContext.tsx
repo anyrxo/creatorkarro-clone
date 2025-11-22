@@ -13,15 +13,18 @@ interface CourseContextType {
     isLessonComplete: (courseId: string, lessonId: string) => boolean
     getCourseProgress: (courseId: string) => number
     isLoading: boolean
+    accessLevel: 'free' | 'paid'
+    isLessonLocked: (courseId: string, moduleId: string, lessonId: string) => boolean
 }
 
 const CourseContext = createContext<CourseContextType | undefined>(undefined)
 
-export function CourseProvider({ children }: { children: ReactNode }) {
+export function CourseProvider({ children, initialAccessLevel = 'free' }: { children: ReactNode, initialAccessLevel?: 'free' | 'paid' }) {
     const { user, isLoaded: isUserLoaded } = useUser()
     const [completedLessons, setCompletedLessons] = useState<string[]>([])
     const [isLoaded, setIsLoaded] = useState(false)
     const [isLoading, setIsLoading] = useState(true)
+    const [accessLevel, setAccessLevel] = useState<'free' | 'paid'>(initialAccessLevel)
     const { awardXP, updateStreak } = useGamification()
 
     // Load from local storage on mount
@@ -163,6 +166,21 @@ export function CourseProvider({ children }: { children: ReactNode }) {
         return completedLessons.includes(`${courseId}::${lessonId}`)
     }
 
+    const isLessonLocked = (courseId: string, moduleId: string, lessonId: string) => {
+        if (accessLevel === 'paid') return false
+
+        // Free Preview Logic: Unlock first lesson of first module
+        const course = learningContent[courseId]
+        if (!course) return true
+
+        const firstModule = course.modules[0]
+        if (moduleId === firstModule.id && lessonId === firstModule.lessons[0].id) {
+            return false // Unlocked
+        }
+
+        return true // Locked
+    }
+
     const getCourseProgress = (courseId: string) => {
         const course = learningContent[courseId]
         if (!course) return 0
@@ -184,7 +202,7 @@ export function CourseProvider({ children }: { children: ReactNode }) {
     }
 
     return (
-        <CourseContext.Provider value={{ completedLessons, markLessonComplete, isLessonComplete, getCourseProgress, isLoading }}>
+        <CourseContext.Provider value={{ completedLessons, markLessonComplete, isLessonComplete, getCourseProgress, isLoading, accessLevel, isLessonLocked }}>
             {children}
         </CourseContext.Provider>
     )

@@ -18,17 +18,16 @@ export default async function LearningLayout({
     // Check if user is admin
     const { authorized: isAdmin } = await checkAdminAccess()
 
-    // If admin, allow access immediately
+    // If admin, grant paid access
     if (isAdmin) {
         return (
-            <ClientLearningLayout>
+            <ClientLearningLayout accessLevel="paid">
                 {children}
             </ClientLearningLayout>
         )
     }
 
     // Check for license key
-    // Use Service Role key to bypass RLS and securely check existence
     const supabaseAdmin = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
         process.env.SUPABASE_SERVICE_ROLE_KEY!
@@ -38,16 +37,14 @@ export default async function LearningLayout({
         .from('license_keys')
         .select('id, status')
         .eq('user_id', user.id)
-        .eq('status', 'claimed')
+        .in('status', ['claimed', 'active'])
         .single()
 
-    // If no active license found, redirect to redeem page
-    if (!license) {
-        redirect('/redeem')
-    }
+    // Determine access level based on license
+    const accessLevel = license ? 'paid' : 'free'
 
     return (
-        <ClientLearningLayout>
+        <ClientLearningLayout accessLevel={accessLevel}>
             {children}
         </ClientLearningLayout>
     )

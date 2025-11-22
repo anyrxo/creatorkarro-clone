@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import CourseCard from '@/components/learning/CourseCard'
+import FreeDashboard from '@/components/learning/FreeDashboard'
 import { Instagram, Bot, Package, Workflow, Sparkles, Trophy, Flame, Target, Clock, Zap, DollarSign } from 'lucide-react'
 import { useCourse } from '@/context/CourseContext'
 import { useGamification } from '@/context/GamificationContext'
@@ -15,9 +16,10 @@ import DailyQuestsCard from '@/components/gamification/DailyQuestsCard'
 import ErrorBoundary from '@/components/ErrorBoundary'
 import GamificationDebug from '@/components/gamification/GamificationDebug'
 import Link from 'next/link'
+import { NotificationBell } from '@/components/NotificationBell'
 
 export default function LearningDashboard() {
-    const { getCourseProgress, completedLessons } = useCourse()
+    const { getCourseProgress, completedLessons, accessLevel } = useCourse()
     const { stats, achievements, quests, isLoading, updateStreak } = useGamification()
     const { user } = useUser()
     const [greeting, setGreeting] = useState('')
@@ -33,6 +35,11 @@ export default function LearningDashboard() {
         else if (hour < 18) setGreeting('Good afternoon')
         else setGreeting('Good evening')
     }, [])
+
+    // Render Free Dashboard if user doesn't have paid access
+    if (accessLevel === 'free') {
+        return <FreeDashboard />
+    }
 
     const courses = [
         {
@@ -108,16 +115,21 @@ export default function LearningDashboard() {
                             </p>
                         </div>
 
-                        <Link href="/affiliate">
-                            <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="hidden md:flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-xl text-green-400 font-bold hover:bg-green-500/30 transition-all"
-                            >
-                                <DollarSign className="w-5 h-5" />
-                                Partner Program
-                            </motion.button>
-                        </Link>
+                        <div className="flex items-center gap-4">
+                            <div className="bg-zinc-900/50 border border-white/10 rounded-full p-1">
+                                <NotificationBell />
+                            </div>
+                            <Link href="/affiliate">
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="hidden md:flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-xl text-green-400 font-bold hover:bg-green-500/30 transition-all"
+                                >
+                                    <DollarSign className="w-5 h-5" />
+                                    Partner Program
+                                </motion.button>
+                            </Link>
+                        </div>
                     </div>
                 </motion.div>
 

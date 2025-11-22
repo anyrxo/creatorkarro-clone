@@ -9,11 +9,13 @@ import { SettingsProvider } from '@/context/SettingsContext'
 
 export default function ClientLearningLayout({
     children,
+    accessLevel = 'free'
 }: {
     children: React.ReactNode
+    accessLevel?: 'free' | 'paid'
 }) {
     return (
-        <CourseProvider>
+        <CourseProvider initialAccessLevel={accessLevel}>
             <SettingsProvider>
                 <div className="min-h-screen bg-[#0a0a0a] text-white selection:bg-purple-500/30 relative overflow-hidden">
                     <AuroraBackground />

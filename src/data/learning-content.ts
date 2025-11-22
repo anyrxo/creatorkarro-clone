@@ -351,5 +351,330 @@ export const learningContent: Record<string, CourseContent> = {
                 ]
             }
         ]
+    },
+
+    // 🎁 BONUS COURSE: Futures Trading Mastery
+    'futures-trading': {
+        id: 'futures-trading',
+        title: 'Futures Trading Mastery',
+        description: '💰 BONUS COURSE: The Prop Firm Profit System - Make Your First $5K in 30 Days Guaranteed',
+        modules: [
+            {
+                id: 'mod-1',
+                title: 'Module 1: Trading Foundation & Mindset',
+                lessons: [
+                    {
+                        id: '1-1',
+                        title: 'The Trader Psychology Blueprint',
+                        duration: '25:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Complete the Trader Psychology Self-Assessment' },
+                            { id: 'a2', text: 'Set up your trading journal template' },
+                            { id: 'a3', text: 'Write down your "Why" for trading' }
+                        ],
+                        resources: [
+                            { title: 'Trader Psychology Checklist', type: 'pdf', url: '#' },
+                            { title: 'Daily Trading Journal Template', type: 'doc', url: '#' }
+                        ]
+                    },
+                    {
+                        id: '1-2',
+                        title: 'Futures Markets Explained',
+                        duration: '20:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Open a demo trading account' },
+                            { id: 'a2', text: 'Practice placing orders on demo' }
+                        ]
+                    },
+                    {
+                        id: '1-3',
+                        title: 'Understanding Leverage & Margin',
+                        duration: '18:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Calculate position sizes for different account balances' },
+                            { id: 'a2', text: 'Complete leverage quiz' }
+                        ],
+                        resources: [
+                            { title: 'Position Size Calculator', type: 'link', url: '#' },
+                            { title: 'Leverage Guide PDF', type: 'pdf', url: '#' }
+                        ]
+                    },
+                    {
+                        id: '1-4',
+                        title: 'Common Beginner Mistakes (And How to Avoid Them)',
+                        duration: '22:00',
+                        type: 'video'
+                    }
+                ]
+            },
+            {
+                id: 'mod-2',
+                title: 'Module 2: Prop Firms & Funding',
+                lessons: [
+                    {
+                        id: '2-1',
+                        title: 'What Are Prop Firms? (Complete Overview)',
+                        duration: '20:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Research top 5 prop firms' },
+                            { id: 'a2', text: 'Compare their challenge requirements' }
+                        ],
+                        resources: [
+                            { title: 'Prop Firm Comparison Sheet', type: 'doc', url: '#' },
+                            { title: 'Top 10 Prop Firms 2024', type: 'pdf', url: '#' }
+                        ]
+                    },
+                    {
+                        id: '2-2',
+                        title: 'Choosing the Right Prop Firm for YOU',
+                        duration: '25:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Select your target prop firm' },
+                            { id: 'a2', text: 'Sign up for demo account' }
+                        ]
+                    },
+                    {
+                        id: '2-3',
+                        title: 'Passing Prop Firm Challenges (The Blueprint)',
+                        duration: '30:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Create your challenge game plan' },
+                            { id: 'a2', text: 'Set realistic profit targets' }
+                        ],
+                        resources: [
+                            { title: 'Challenge Passing Framework', type: 'pdf', url: '#' },
+                            { title: 'Daily Trading Plan Template', type: 'doc', url: '#' }
+                        ]
+                    },
+                    {
+                        id: '2-4',
+                        title: 'The $5K/Month System (Our Proven Strategy)',
+                        duration: '35:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Map out your 30-day action plan' },
+                            { id: 'a2', text: 'Calculate expected monthly returns' },
+                            { id: 'a3', text: 'Set up tracking spreadsheet' }
+                        ],
+                        resources: [
+                            { title: '$5K Month Roadmap', type: 'pdf', url: '#' },
+                            { title: 'Profit Tracking Spreadsheet', type: 'doc', url: '#' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'mod-3',
+                title: 'Module 3: Risk Management Mastery',
+                lessons: [
+                    {
+                        id: '3-1',
+                        title: 'The 1% Rule (Never Blow Your Account)',
+                        duration: '20:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Calculate your max risk per trade' },
+                            { id: 'a2', text: 'Set up stop-loss alerts' }
+                        ],
+                        resources: [
+                            { title: 'Risk Calculator Tool', type: 'link', url: '#' }
+                        ]
+                    },
+                    {
+                        id: '3-2',
+                        title: 'Position Sizing for Consistent Profits',
+                        duration: '25:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Use position sizing calculator for next 10 trades' }
+                        ],
+                        resources: [
+                            { title: 'Position Sizing Cheat Sheet', type: 'pdf', url: '#' }
+                        ]
+                    },
+                    {
+                        id: '3-3',
+                        title: 'Risk:Reward Ratios Explained',
+                        duration: '22:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Calculate R:R for your last 5 trades' },
+                            { id: 'a2', text: 'Set minimum R:R for future trades' }
+                        ]
+                    },
+                    {
+                        id: '3-4',
+                        title: 'Managing Multiple Positions',
+                        duration: '18:00',
+                        type: 'video'
+                    },
+                    {
+                        id: '3-5',
+                        title: 'When to Cut Losses vs Hold',
+                        duration: '20:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Create your exit strategy checklist' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'mod-4',
+                title: 'Module 4: The Trading Strategy',
+                lessons: [
+                    {
+                        id: '4-1',
+                        title: 'Market Structure & Trend Analysis',
+                        duration: '30:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Identify trends on 5 different charts' },
+                            { id: 'a2', text: 'Mark key support/resistance levels' }
+                        ]
+                    },
+                    {
+                        id: '4-2',
+                        title: 'High-Probability Entry Setups',
+                        duration: '35:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Practice identifying setups on demo' },
+                            { id: 'a2', text: 'Screenshot 10 valid setups' }
+                        ],
+                        resources: [
+                            { title: 'Entry Setup Checklist', type: 'pdf', url: '#' },
+                            { title: 'Chart Pattern Guide', type: 'pdf', url: '#' }
+                        ]
+                    },
+                    {
+                        id: '4-3',
+                        title: 'The Scalping Strategy (Quick Profits)',
+                        duration: '28:00',
+                        type: 'video'
+                    },
+                    {
+                        id: '4-4',
+                        title: 'The Swing Trading Strategy (Less Screen Time)',
+                        duration: '30:00',
+                        type: 'video'
+                    },
+                    {
+                        id: '4-5',
+                        title: 'Reading Price Action Like a Pro',
+                        duration: '32:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Analyze 20 candlestick patterns' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'mod-5',
+                title: 'Module 5: Performance Tracking & Optimization',
+                lessons: [
+                    {
+                        id: '5-1',
+                        title: 'The Power of Trading Journals',
+                        duration: '20:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Journal your next 20 trades in detail' },
+                            { id: 'a2', text: 'Screenshot every entry and exit' }
+                        ],
+                        resources: [
+                            { title: 'Professional Trading Journal Template', type: 'doc', url: '#' },
+                            { title: 'Trade Review Checklist', type: 'pdf', url: '#' }
+                        ]
+                    },
+                    {
+                        id: '5-2',
+                        title: 'Calculating Win Rate & Profit Factor',
+                        duration: '18:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Calculate your stats for last 50 trades' },
+                            { id: 'a2', text: 'Set performance improvement goals' }
+                        ],
+                        resources: [
+                            { title: 'Trading Stats Calculator', type: 'link', url: '#' }
+                        ]
+                    },
+                    {
+                        id: '5-3',
+                        title: 'Weekly Performance Reviews',
+                        duration: '22:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Complete first weekly review' }
+                        ],
+                        resources: [
+                            { title: 'Weekly Review Template', type: 'doc', url: '#' }
+                        ]
+                    },
+                    {
+                        id: '5-4',
+                        title: 'Identifying & Fixing Your Weaknesses',
+                        duration: '25:00',
+                        type: 'video'
+                    },
+                    {
+                        id: '5-5',
+                        title: 'Scaling Your Account (From $5K to $50K+)',
+                        duration: '30:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Create your scaling roadmap' }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'mod-6',
+                title: 'Module 6: Advanced Resources & Tools',
+                lessons: [
+                    {
+                        id: '6-1',
+                        title: 'Best Trading Platforms & Tools',
+                        duration: '20:00',
+                        type: 'video',
+                        resources: [
+                            { title: 'Trading Tools Resource Pack', type: 'link', url: '#' },
+                            { title: 'Recommended Platforms List', type: 'pdf', url: '#' }
+                        ]
+                    },
+                    {
+                        id: '6-2',
+                        title: 'Economic Calendar & News Trading',
+                        duration: '25:00',
+                        type: 'video'
+                    },
+                    {
+                        id: '6-3',
+                        title: 'Building Your Support System',
+                        duration: '15:00',
+                        type: 'video'
+                    },
+                    {
+                        id: '6-4',
+                        title: 'The $5K Challenge Guarantee Breakdown',
+                        duration: '20:00',
+                        type: 'video',
+                        actionItems: [
+                            { id: 'a1', text: 'Commit to the 30-day challenge' },
+                            { id: 'a2', text: 'Share your commitment in community' },
+                            { id: 'a3', text: 'Set up accountability partner' }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 }

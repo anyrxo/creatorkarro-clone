@@ -259,18 +259,12 @@ export async function updateAffiliateCode(userId: string, newCode: string) {
     return { success: true }
 }
 
-export async function grantAccessToUser(email: string, userId: string | null, type: 'lifetime' | 'trial_7_days') {
+export async function grantAccessToUser(email: string, userId: string | null, expiresInHours?: number) {
     const supabaseAdmin = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
         process.env.SUPABASE_SERVICE_ROLE_KEY!,
         { auth: { persistSession: false } }
     )
-
-    // 1. Determine expiration
-    let expiresInHours = undefined
-    if (type === 'trial_7_days') {
-        expiresInHours = 7 * 24
-    }
 
     // 2. Generate Key
     const { success, keys, error } = await generateLicenseKeys(1, 'all-access', expiresInHours)

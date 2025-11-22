@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown, PlayCircle, CheckCircle, FileText, Menu, X, Flame, Monitor } from 'lucide-react'
+import { ChevronDown, PlayCircle, CheckCircle, FileText, Menu, X, Flame, Monitor, Lock } from 'lucide-react'
 import { CourseContent } from '@/data/learning-content'
 import Link from 'next/link'
 import { useCourse } from '@/context/CourseContext'
@@ -17,7 +17,7 @@ interface SidebarProps {
 
 export default function Sidebar({ course, currentLessonId, onClose }: SidebarProps) {
     const [openModules, setOpenModules] = useState<string[]>(course.modules.map(m => m.id))
-    const { isLessonComplete, getCourseProgress } = useCourse()
+    const { isLessonComplete, getCourseProgress, isLessonLocked } = useCourse()
     const { stats } = useGamification()
 
     const toggleModule = (moduleId: string) => {
@@ -126,6 +126,7 @@ export default function Sidebar({ course, currentLessonId, onClose }: SidebarPro
                                         {module.lessons.map((lesson) => {
                                             const isComplete = isLessonComplete(course.id, lesson.id)
                                             const isActive = currentLessonId === lesson.id
+                                            const isLocked = isLessonLocked(course.id, module.id, lesson.id)
 
                                             return (
                                                 <Link
@@ -134,11 +135,15 @@ export default function Sidebar({ course, currentLessonId, onClose }: SidebarPro
                                                     onClick={onClose} // Close sidebar on mobile when clicked
                                                     className={`flex items-center gap-3 p-3 rounded-lg text-sm transition-all group ${isActive
                                                         ? 'bg-purple-500/10 text-purple-400 border border-purple-500/20'
-                                                        : 'text-zinc-400 hover:bg-white/5 hover:text-white'
+                                                        : isLocked
+                                                            ? 'text-zinc-600 cursor-default opacity-60'
+                                                            : 'text-zinc-400 hover:bg-white/5 hover:text-white'
                                                         }`}
                                                 >
                                                     {isComplete ? (
                                                         <CheckCircle className="w-4 h-4 flex-shrink-0 text-green-500" />
+                                                    ) : isLocked ? (
+                                                        <Lock className="w-4 h-4 flex-shrink-0 text-zinc-600" />
                                                     ) : lesson.type === 'video' ? (
                                                         <PlayCircle className={`w-4 h-4 flex-shrink-0 ${isActive ? 'text-purple-400' : 'group-hover:text-white'}`} />
                                                     ) : (
@@ -147,7 +152,10 @@ export default function Sidebar({ course, currentLessonId, onClose }: SidebarPro
                                                     <span className={`line-clamp-1 flex-grow ${isComplete ? 'text-zinc-500 line-through decoration-zinc-700' : ''}`}>
                                                         {lesson.title}
                                                     </span>
-                                                    <span className="text-xs opacity-50">{lesson.duration}</span>
+                                                    {isLocked && (
+                                                        <span className="text-[10px] bg-purple-500/20 text-purple-400 px-2 py-0.5 rounded-full">Locked</span>
+                                                    )}
+                                                    {!isLocked && <span className="text-xs opacity-50">{lesson.duration}</span>}
                                                 </Link>
                                             )
                                         })}

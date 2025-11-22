@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { getStudents, inviteStudent, revokeAccess, deleteUser, toggleAdmin, updateAffiliateCode, grantAccessToUser } from '@/app/actions/admin-users'
-import { Loader2, Plus, Mail, User, Calendar, Ban, CheckCircle, Search, Copy, Shield, ShieldAlert, Edit2, Save, X, Key, Clock, Infinity } from 'lucide-react'
+import { Loader2, Plus, Mail, User, Calendar, Ban, CheckCircle, Search, Copy, Shield, ShieldAlert, Edit2, Save, X, Key, Clock, Infinity, Send } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function AdminUsersPage() {
@@ -18,30 +18,12 @@ export default function AdminUsersPage() {
     const [editCode, setEditCode] = useState('')
     const [isSavingCode, setIsSavingCode] = useState(false)
 
-    // Send Key Modal
+    // Send Key Modal State
     const [sendKeyModal, setSendKeyModal] = useState<{ open: boolean, email: string, userId: string | null } | null>(null)
     const [isSendingKey, setIsSendingKey] = useState(false)
-
-    const handleSendKey = async (type: 'lifetime' | 'trial_7_days') => {
-        if (!sendKeyModal) return
-        setIsSendingKey(true)
-
-        const result = await grantAccessToUser(sendKeyModal.email, sendKeyModal.userId, type)
-
-        setIsSendingKey(false)
-        setSendKeyModal(null)
-
-        if (result.success) {
-            setInviteResult({
-                success: true,
-                key: result.key,
-                message: `Key sent to ${sendKeyModal.email}.`
-            })
-            loadStudents()
-        } else {
-            setInviteResult({ success: false, message: result.error || 'Failed to send key' })
-        }
-    }
+    const [keyType, setKeyType] = useState<'lifetime' | 'timed'>('lifetime')
+    const [durationValue, setDurationValue] = useState(7)
+    const [durationUnit, setDurationUnit] = useState<'hours' | 'days' | 'weeks'>('days')
 
     useEffect(() => {
         loadStudents()
@@ -105,6 +87,34 @@ export default function AdminUsersPage() {
         } else {
             setEditingId(null)
             loadStudents()
+        }
+    }
+
+    const handleSendKey = async () => {
+        if (!sendKeyModal) return
+        setIsSendingKey(true)
+
+        let hours = undefined
+        if (keyType === 'timed') {
+            if (durationUnit === 'hours') hours = durationValue
+            if (durationUnit === 'days') hours = durationValue * 24
+            if (durationUnit === 'weeks') hours = durationValue * 24 * 7
+        }
+
+        const result = await grantAccessToUser(sendKeyModal.email, sendKeyModal.userId, hours)
+
+        setIsSendingKey(false)
+        setSendKeyModal(null)
+
+        if (result.success) {
+            setInviteResult({
+                success: true,
+                key: result.key,
+                message: `Key sent to ${sendKeyModal.email}.`
+            })
+            loadStudents()
+        } else {
+            setInviteResult({ success: false, message: result.error || 'Failed to send key' })
         }
     }
 
@@ -358,6 +368,7 @@ export default function AdminUsersPage() {
                     </table>
                 </div>
             )}
+
             {/* Send Key Modal */}
             <AnimatePresence>
                 {sendKeyModal && (
@@ -380,42 +391,68 @@ export default function AdminUsersPage() {
 
                             <p className="text-zinc-400 mb-6">
                                 Grant access to <span className="text-white font-bold">{sendKeyModal.email}</span>.
-                                They will receive an email with their key.
                             </p>
 
-                            <div className="space-y-3">
-                                <button
-                                    onClick={() => handleSendKey('lifetime')}
-                                    disabled={isSendingKey}
-                                    className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white p-4 rounded-xl font-bold flex items-center justify-between group transition-all"
-                                >
-                                    <div className="flex items-center gap-3">
-                                        <div className="bg-white/20 p-2 rounded-lg">
-                                            <Infinity className="w-5 h-5 text-white" />
+                            <div className="space-y-4">
+                                {/* Type Selection */}
+                                <div className="grid grid-cols-2 gap-2 bg-black/30 p-1 rounded-xl">
+                                    <button
+                                        onClick={() => setKeyType('lifetime')}
+                                        className={`p-2 rounded-lg text-sm font-medium transition-all ${keyType === 'lifetime' ? 'bg-zinc-800 text-white shadow' : 'text-zinc-400 hover:text-white'}`}
+                                    >
+                                        Lifetime
+                                    </button>
+                                    <button
+                                        onClick={() => setKeyType('timed')}
+                                        className={`p-2 rounded-lg text-sm font-medium transition-all ${keyType === 'timed' ? 'bg-zinc-800 text-white shadow' : 'text-zinc-400 hover:text-white'}`}
+                                    >
+                                        Timed Access
+                                    </button>
+                                </div>
+
+                                {keyType === 'timed' && (
+                                    <div className="bg-zinc-800/50 p-4 rounded-xl border border-white/5 space-y-3">
+                                        <label className="text-xs font-bold text-zinc-400 uppercase">Duration</label>
+                                        <div className="flex gap-2">
+                                            <input
+                                                type="number"
+                                                min="1"
+                                                value={durationValue}
+                                                onChange={(e) => setDurationValue(parseInt(e.target.value) || 1)}
+                                                className="w-20 bg-black/50 border border-white/10 rounded-lg px-3 py-2 text-white text-center focus:border-purple-500 outline-none"
+                                            />
+                                            <select
+                                                value={durationUnit}
+                                                onChange={(e) => setDurationUnit(e.target.value as any)}
+                                                className="flex-1 bg-black/50 border border-white/10 rounded-lg px-3 py-2 text-white focus:border-purple-500 outline-none"
+                                            >
+                                                <option value="hours">Hours</option>
+                                                <option value="days">Days</option>
+                                                <option value="weeks">Weeks</option>
+                                            </select>
                                         </div>
-                                        <div className="text-left">
-                                            <div className="text-sm font-bold">Lifetime Access</div>
-                                            <div className="text-xs text-purple-200">Full unrestricted access</div>
-                                        </div>
+                                        <p className="text-xs text-zinc-500">
+                                            Key will expire automatically after this period.
+                                        </p>
                                     </div>
-                                    {isSendingKey ? <Loader2 className="w-5 h-5 animate-spin" /> : <Plus className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />}
-                                </button>
+                                )}
 
                                 <button
-                                    onClick={() => handleSendKey('trial_7_days')}
+                                    onClick={handleSendKey}
                                     disabled={isSendingKey}
-                                    className="w-full bg-zinc-800 hover:bg-zinc-700 text-white p-4 rounded-xl font-bold flex items-center justify-between group transition-all border border-white/5 hover:border-white/10"
+                                    className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white p-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all disabled:opacity-50 mt-4"
                                 >
-                                    <div className="flex items-center gap-3">
-                                        <div className="bg-zinc-700 p-2 rounded-lg">
-                                            <Clock className="w-5 h-5 text-zinc-400" />
-                                        </div>
-                                        <div className="text-left">
-                                            <div className="text-sm font-bold">7-Day Trial</div>
-                                            <div className="text-xs text-zinc-400">Expires automatically</div>
-                                        </div>
-                                    </div>
-                                    {isSendingKey ? <Loader2 className="w-5 h-5 animate-spin" /> : <Plus className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />}
+                                    {isSendingKey ? (
+                                        <>
+                                            <Loader2 className="w-5 h-5 animate-spin" />
+                                            Generating...
+                                        </>
+                                    ) : (
+                                        <>
+                                            <Send className="w-5 h-5" />
+                                            Send {keyType === 'lifetime' ? 'Lifetime' : 'Timed'} Key
+                                        </>
+                                    )}
                                 </button>
                             </div>
                         </motion.div>
@@ -425,4 +462,3 @@ export default function AdminUsersPage() {
         </div>
     )
 }
-

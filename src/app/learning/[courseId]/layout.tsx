@@ -35,6 +35,7 @@ export default function CourseLayout({
             <div className="md:hidden p-4 border-b border-white/5 flex justify-between items-center bg-zinc-900/80 backdrop-blur-md sticky top-0 z-40">
                 <span className="font-bold text-white truncate pr-4">{course.title}</span>
                 <div className="flex items-center gap-2">
+                    <NotificationBell />
                     <button
                         onClick={() => setIsSettingsOpen(true)}
                         className="p-2 text-zinc-400 hover:text-white bg-white/5 rounded-lg"
@@ -94,7 +95,10 @@ export default function CourseLayout({
             {/* Main Content */}
             <div className="flex-1 overflow-y-auto h-[calc(100vh-65px)] md:h-screen custom-scrollbar relative">
                 {/* Desktop Settings Trigger (Floating) */}
-                <div className="hidden md:block absolute top-6 right-8 z-30">
+                <div className="hidden md:flex absolute top-6 right-8 z-30 gap-3 items-center">
+                    <div className="bg-black/50 backdrop-blur-md border border-white/10 rounded-full shadow-xl">
+                        <NotificationBell />
+                    </div>
                     <button
                         onClick={() => setIsSettingsOpen(true)}
                         className="p-3 text-zinc-400 hover:text-white bg-black/50 backdrop-blur-md border border-white/10 hover:border-white/20 rounded-full transition-all hover:scale-110 shadow-xl"

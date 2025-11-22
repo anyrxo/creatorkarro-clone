@@ -11,15 +11,36 @@ export default function BroadcastPage() {
     const [content, setContent] = useState('')
     const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
     const [stats, setStats] = useState<{ sent: number, total: number } | null>(null)
-    const [students, setStudents] = useState<{ email: string, userId: string, joinedAt: string }[]>([])
+    const [students, setStudents] = useState<{ email: string, userId: string, joinedAt: string, status: 'free' | 'paid' }[]>([])
     const [selectedEmails, setSelectedEmails] = useState<Set<string>>(new Set())
     const [isLoadingStudents, setIsLoadingStudents] = useState(true)
     const [searchTerm, setSearchTerm] = useState('')
+    const [targetAudience, setTargetAudience] = useState<'all' | 'free' | 'paid' | 'custom'>('all')
+    const [selectedTemplate, setSelectedTemplate] = useState('')
     const router = useRouter()
+
+    const TEMPLATES = [
+        { id: 'welcome', name: 'Welcome Message', subject: 'Welcome to IImagined!', content: '<h1>Welcome!</h1><p>We are excited to have you on board.</p>' },
+        { id: 'new_module', name: 'New Module Alert', subject: 'New Module: [Name]', content: '<h1>New Content Available!</h1><p>We just released a new module. Check it out now.</p>' },
+        { id: 'maintenance', name: 'Maintenance Update', subject: 'Scheduled Maintenance', content: '<p>We will be undergoing scheduled maintenance on [Date] at [Time].</p>' },
+        { id: 'promo', name: 'Special Offer', subject: 'Exclusive Offer for You', content: '<h1>Special Deal!</h1><p>Get 50% off for a limited time.</p>' },
+    ]
 
     useEffect(() => {
         loadStudents()
     }, [])
+
+    useEffect(() => {
+        if (targetAudience === 'custom') return
+
+        const filtered = students.filter(s => {
+            if (targetAudience === 'all') return true
+            if (targetAudience === 'free') return s.status === 'free'
+            if (targetAudience === 'paid') return s.status === 'paid'
+            return true
+        })
+        setSelectedEmails(new Set(filtered.map(s => s.email)))
+    }, [targetAudience, students])
 
     const loadStudents = async () => {
         setIsLoadingStudents(true)
@@ -31,6 +52,7 @@ export default function BroadcastPage() {
     }
 
     const toggleEmail = (email: string) => {
+        setTargetAudience('custom') // Switch to custom if manually toggling
         const newSet = new Set(selectedEmails)
         if (newSet.has(email)) {
             newSet.delete(email)
@@ -41,10 +63,22 @@ export default function BroadcastPage() {
     }
 
     const toggleAll = () => {
+        setTargetAudience('custom')
         if (selectedEmails.size === students.length) {
             setSelectedEmails(new Set())
         } else {
             setSelectedEmails(new Set(students.map(s => s.email)))
+        }
+    }
+
+    const handleTemplateChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        const t = TEMPLATES.find(t => t.id === e.target.value)
+        if (t) {
+            setSubject(t.subject)
+            setContent(t.content)
+            setSelectedTemplate(t.id)
+        } else {
+            setSelectedTemplate('')
         }
     }
 
@@ -125,6 +159,37 @@ export default function BroadcastPage() {
                         </div>
                     ) : (
                         <form onSubmit={handleSend} className="space-y-6 bg-zinc-900/50 border border-white/5 rounded-2xl p-8">
+
+                            {/* Targeting & Templates Row */}
+                            <div className="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-sm font-medium text-zinc-400 mb-2">Target Audience</label>
+                                    <select
+                                        value={targetAudience}
+                                        onChange={(e) => setTargetAudience(e.target.value as any)}
+                                        className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 transition-all"
+                                    >
+                                        <option value="all">All Students</option>
+                                        <option value="paid">Paid Members Only</option>
+                                        <option value="free">Free Users Only</option>
+                                        <option value="custom">Custom Selection</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-medium text-zinc-400 mb-2">Load Template</label>
+                                    <select
+                                        value={selectedTemplate}
+                                        onChange={handleTemplateChange}
+                                        className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 transition-all"
+                                    >
+                                        <option value="">Select a template...</option>
+                                        {TEMPLATES.map(t => (
+                                            <option key={t.id} value={t.id}>{t.name}</option>
+                                        ))}
+                                    </select>
+                                </div>
+                            </div>
+
                             <div>
                                 <label className="block text-sm font-medium text-zinc-400 mb-2">Subject Line</label>
                                 <input
@@ -215,14 +280,14 @@ export default function BroadcastPage() {
                                         key={student.email}
                                         onClick={() => toggleEmail(student.email)}
                                         className={`p-3 rounded-lg border cursor-pointer transition-all ${selectedEmails.has(student.email)
-                                                ? 'bg-purple-500/20 border-purple-500/50'
-                                                : 'bg-white/5 border-white/5 hover:bg-white/10'
+                                            ? 'bg-purple-500/20 border-purple-500/50'
+                                            : 'bg-white/5 border-white/5 hover:bg-white/10'
                                             }`}
                                     >
                                         <div className="flex items-center gap-3">
                                             <div className={`w-4 h-4 rounded border flex items-center justify-center ${selectedEmails.has(student.email)
-                                                    ? 'bg-purple-500 border-purple-500'
-                                                    : 'border-zinc-500'
+                                                ? 'bg-purple-500 border-purple-500'
+                                                : 'border-zinc-500'
                                                 }`}>
                                                 {selectedEmails.has(student.email) && <CheckCircle className="w-3 h-3 text-white" />}
                                             </div>

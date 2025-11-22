@@ -17,10 +17,10 @@ export async function getStudentsForBroadcast() {
         process.env.SUPABASE_SERVICE_ROLE_KEY!
     )
 
-    const { data: students, error } = await supabaseAdmin
-        .from('license_keys')
-        .select('email, user_id, created_at')
-        .in('status', ['active', 'claimed'])
+    // Fetch profiles with their license keys
+    const { data: profiles, error } = await supabaseAdmin
+        .from('profiles')
+        .select('email, user_id, created_at, license_keys(status, plan_id)')
         .order('created_at', { ascending: false })
 
     if (error) {
@@ -28,11 +28,18 @@ export async function getStudentsForBroadcast() {
         return []
     }
 
-    return students.map(s => ({
-        email: s.email,
-        userId: s.user_id,
-        joinedAt: s.created_at
-    })).filter(s => s.email && s.email.includes('@'))
+    return profiles.map((p: any) => {
+        const hasKey = p.license_keys && p.license_keys.length > 0
+        const isPaid = hasKey && (p.license_keys[0].status === 'active' || p.license_keys[0].status === 'claimed')
+
+        return {
+            email: p.email,
+            userId: p.user_id,
+            joinedAt: p.created_at,
+            status: isPaid ? 'paid' : 'free',
+            plan: hasKey ? p.license_keys[0].plan_id : null
+        }
+    }).filter((s: any) => s.email && s.email.includes('@'))
 }
 
 export async function sendBroadcastEmail(subject: string, htmlContent: string, recipients?: string[]) {
@@ -97,6 +104,34 @@ export async function sendBroadcastEmail(subject: string, htmlContent: string, r
                 console.error(`Failed to send to ${email}:`, error)
             } else {
                 sentCount++
+            }
+        }
+
+        // 3. Create In-App Notifications
+        // Fetch user_ids for the emails
+        const { data: users } = await supabaseAdmin
+            .from('profiles')
+            .select('user_id, email')
+            .in('email', uniqueEmails)
+
+        if (users && users.length > 0) {
+            const plainTextPreview = htmlContent.replace(/<[^>]*>?/gm, ' ').substring(0, 150) + (htmlContent.length > 150 ? '...' : '')
+
+            const notifications = users.map(u => ({
+                user_id: u.user_id,
+                title: subject,
+                message: plainTextPreview,
+                type: 'info',
+                link: null, // Could link to a "Messages" page if we had one
+                read: false
+            }))
+
+            const { error: notifyError } = await supabaseAdmin
+                .from('notifications')
+                .insert(notifications)
+
+            if (notifyError) {
+                console.error('Failed to create notifications:', notifyError)
             }
         }
 
