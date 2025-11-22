@@ -41,7 +41,28 @@ export async function GET(request: Request) {
             free: 0,
             paid: 0,
             nudge: 0,
-            errors: 0
+            errors: 0,
+            skipped: 0
+        }
+
+        // Helper to check if email already sent
+        const checkLog = async (userId: string, emailType: string) => {
+            const { data } = await supabase
+                .from('email_logs')
+                .select('id')
+                .eq('user_id', userId)
+                .eq('email_type', emailType)
+                .single()
+            return !!data
+        }
+
+        // Helper to log sent email
+        const logEmail = async (userId: string, emailType: string) => {
+            await supabase.from('email_logs').insert({
+                user_id: userId,
+                email_type: emailType,
+                sent_at: new Date().toISOString()
+            })
         }
 
         for (const user of recentUsers || []) {
@@ -70,124 +91,81 @@ export async function GET(request: Request) {
                     // Check for inactivity Nudge (if inactive for > 3 days)
                     if (lastSeenAt) {
                         const hoursSinceLastSeen = (Date.now() - lastSeenAt.getTime()) / (1000 * 60 * 60)
-                        if (hoursSinceLastSeen > 72 && hoursSinceLastSeen < 73) {
-                            // Send Nudge Email (We'll use Day 3 template as fallback if nudge isn't ready, or just skip)
-                            // For now, let's assume we added it. If not, we skip.
-                            if (PaidUserEmails.nudgeInactivity) {
-                                await resend.emails.send({
-                                    from: 'IImagined Access <access@notifications.iimagined.ai>',
-                                    to: [email],
-                                    subject: 'We Miss You - Don\'t Lose Momentum',
-                                    html: PaidUserEmails.nudgeInactivity(name, dashboardUrl)
-                                })
-                                emailsSent.nudge++
-                                console.log(`Sent Nudge email to ${email}`)
-                                continue; // Skip regular sequence if nudging
+                        if (hoursSinceLastSeen > 72) {
+                            const emailType = 'paid_nudge_inactivity'
+                            if (!(await checkLog(user.user_id, emailType))) {
+                                if (PaidUserEmails.nudgeInactivity) {
+                                    await resend.emails.send({
+                                        from: 'IImagined Access <access@notifications.iimagined.ai>',
+                                        to: [email],
+                                        subject: 'We Miss You - Don\'t Lose Momentum',
+                                        html: PaidUserEmails.nudgeInactivity(name, dashboardUrl)
+                                    })
+                                    await logEmail(user.user_id, emailType)
+                                    emailsSent.nudge++
+                                    console.log(`Sent Nudge email to ${email}`)
+                                    continue; // Skip regular sequence if nudging
+                                }
                             }
                         }
                     }
 
-                    // Regular Paid Sequence
-                    if (hoursSinceClaim >= 24 && hoursSinceClaim < 25) {
-                        await resend.emails.send({
-                            from: 'IImagined Access <access@notifications.iimagined.ai>',
-                            to: [email],
-                            subject: 'Stop Learning, Start Building',
-                            html: PaidUserEmails.day2Implementation(name, dashboardUrl, calendlyUrl)
-                        })
-                        emailsSent.paid++
-                    } else if (hoursSinceClaim >= 48 && hoursSinceClaim < 49) {
-                        await resend.emails.send({
-                            from: 'IImagined Access <access@notifications.iimagined.ai>',
-                            to: [email],
-                            subject: 'Track Your Progress - What Gets Measured Gets Done',
-                            html: PaidUserEmails.day3Results(name, dashboardUrl, calendlyUrl)
-                        })
-                        emailsSent.paid++
-                    } else if (hoursSinceClaim >= 72 && hoursSinceClaim < 73) {
-                        await resend.emails.send({
-                            from: 'IImagined Access <access@notifications.iimagined.ai>',
-                            to: [email],
-                            subject: 'XP Boost Available - Level Up Your Business',
-                            html: PaidUserEmails.day4XPBoost(name, dashboardUrl)
-                        })
-                        emailsSent.paid++
-                    } else if (hoursSinceClaim >= 96 && hoursSinceClaim < 97) {
-                        await resend.emails.send({
-                            from: 'IImagined Access <access@notifications.iimagined.ai>',
-                            to: [email],
-                            subject: 'Unlock The Inner Circle',
-                            html: PaidUserEmails.day5Community(name, dashboardUrl)
-                        })
-                        emailsSent.paid++
-                    } else if (hoursSinceClaim >= 120 && hoursSinceClaim < 121) {
-                        await resend.emails.send({
-                            from: 'IImagined Access <access@notifications.iimagined.ai>',
-                            to: [email],
-                            subject: 'The $10k Blueprint Visualized',
-                            html: PaidUserEmails.day6Blueprint(name, dashboardUrl)
-                        })
-                        emailsSent.paid++
-                    } else if (hoursSinceClaim >= 144 && hoursSinceClaim < 145) {
-                        await resend.emails.send({
-                            from: 'IImagined Access <access@notifications.iimagined.ai>',
-                            to: [email],
-                            subject: '7-Day Streak Unlocked! 🔥',
-                            html: PaidUserEmails.day7Streak(name, dashboardUrl)
-                        })
-                        emailsSent.paid++
+                    // Define Paid Sequence
+                    const paidSequence = [
+                        { id: 'paid_day2_implementation', hours: 24, subject: 'Stop Learning, Start Building', html: PaidUserEmails.day2Implementation(name, dashboardUrl, calendlyUrl) },
+                        { id: 'paid_day3_results', hours: 48, subject: 'Track Your Progress - What Gets Measured Gets Done', html: PaidUserEmails.day3Results(name, dashboardUrl, calendlyUrl) },
+                        { id: 'paid_day4_xp_boost', hours: 72, subject: 'XP Boost Available - Level Up Your Business', html: PaidUserEmails.day4XPBoost(name, dashboardUrl) },
+                        { id: 'paid_day5_community', hours: 96, subject: 'Unlock The Inner Circle', html: PaidUserEmails.day5Community(name, dashboardUrl) },
+                        { id: 'paid_day6_blueprint', hours: 120, subject: 'The $10k Blueprint Visualized', html: PaidUserEmails.day6Blueprint(name, dashboardUrl) },
+                        { id: 'paid_day7_streak', hours: 144, subject: '7-Day Streak Unlocked! 🔥', html: PaidUserEmails.day7Streak(name, dashboardUrl) }
+                    ]
+
+                    // Send next due email
+                    for (const step of paidSequence) {
+                        if (hoursSinceClaim >= step.hours) {
+                            if (!(await checkLog(user.user_id, step.id))) {
+                                await resend.emails.send({
+                                    from: 'IImagined Access <access@notifications.iimagined.ai>',
+                                    to: [email],
+                                    subject: step.subject,
+                                    html: step.html
+                                })
+                                await logEmail(user.user_id, step.id)
+                                emailsSent.paid++
+                                break // Only send one email per run
+                            } else {
+                                emailsSent.skipped++
+                            }
+                        }
                     }
 
                 } else {
                     // FREE USER SEQUENCE (Conversion)
-                    if (hoursSinceSignup >= 24 && hoursSinceSignup < 25) {
-                        await resend.emails.send({
-                            from: 'IImagined Access <access@notifications.iimagined.ai>',
-                            to: [email],
-                            subject: 'How Marcus Went From $0 to $23K/Month In 90 Days',
-                            html: FreeUserEmails.day2CaseStudy(name, pricingUrl)
-                        })
-                        emailsSent.free++
-                    } else if (hoursSinceSignup >= 48 && hoursSinceSignup < 49) {
-                        await resend.emails.send({
-                            from: 'IImagined Access <access@notifications.iimagined.ai>',
-                            to: [email],
-                            subject: 'The Price Is Going Up - Last Chance At $99',
-                            html: FreeUserEmails.day3LastChance(name, pricingUrl)
-                        })
-                        emailsSent.free++
-                    } else if (hoursSinceSignup >= 72 && hoursSinceSignup < 73) {
-                        await resend.emails.send({
-                            from: 'IImagined Access <access@notifications.iimagined.ai>',
-                            to: [email],
-                            subject: 'The Unfair Advantage You\'re Ignoring',
-                            html: FreeUserEmails.day4Automation(name, pricingUrl)
-                        })
-                        emailsSent.free++
-                    } else if (hoursSinceSignup >= 96 && hoursSinceSignup < 97) {
-                        await resend.emails.send({
-                            from: 'IImagined Access <access@notifications.iimagined.ai>',
-                            to: [email],
-                            subject: 'How to Make Money While You Sleep',
-                            html: FreeUserEmails.day5SleepMoney(name, pricingUrl)
-                        })
-                        emailsSent.free++
-                    } else if (hoursSinceSignup >= 120 && hoursSinceSignup < 121) {
-                        await resend.emails.send({
-                            from: 'IImagined Access <access@notifications.iimagined.ai>',
-                            to: [email],
-                            subject: 'Is This Right For You? Let\'s Be Honest',
-                            html: FreeUserEmails.day6Objections(name, pricingUrl)
-                        })
-                        emailsSent.free++
-                    } else if (hoursSinceSignup >= 144 && hoursSinceSignup < 145) {
-                        await resend.emails.send({
-                            from: 'IImagined Access <access@notifications.iimagined.ai>',
-                            to: [email],
-                            subject: 'Final Notice: Account Status Update',
-                            html: FreeUserEmails.day7Final(name, pricingUrl)
-                        })
-                        emailsSent.free++
+                    const freeSequence = [
+                        { id: 'free_day2_case_study', hours: 24, subject: 'How Marcus Went From $0 to $23K/Month In 90 Days', html: FreeUserEmails.day2CaseStudy(name, pricingUrl) },
+                        { id: 'free_day3_last_chance', hours: 48, subject: 'The Price Is Going Up - Last Chance At $99', html: FreeUserEmails.day3LastChance(name, pricingUrl) },
+                        { id: 'free_day4_automation', hours: 72, subject: 'The Unfair Advantage You\'re Ignoring', html: FreeUserEmails.day4Automation(name, pricingUrl) },
+                        { id: 'free_day5_sleep_money', hours: 96, subject: 'How to Make Money While You Sleep', html: FreeUserEmails.day5SleepMoney(name, pricingUrl) },
+                        { id: 'free_day6_objections', hours: 120, subject: 'Is This Right For You? Let\'s Be Honest', html: FreeUserEmails.day6Objections(name, pricingUrl) },
+                        { id: 'free_day7_final', hours: 144, subject: 'Final Notice: Account Status Update', html: FreeUserEmails.day7Final(name, pricingUrl) }
+                    ]
+
+                    for (const step of freeSequence) {
+                        if (hoursSinceSignup >= step.hours) {
+                            if (!(await checkLog(user.user_id, step.id))) {
+                                await resend.emails.send({
+                                    from: 'IImagined Access <access@notifications.iimagined.ai>',
+                                    to: [email],
+                                    subject: step.subject,
+                                    html: step.html
+                                })
+                                await logEmail(user.user_id, step.id)
+                                emailsSent.free++
+                                break // Only send one email per run
+                            } else {
+                                emailsSent.skipped++
+                            }
+                        }
                     }
                 }
             } catch (emailError) {

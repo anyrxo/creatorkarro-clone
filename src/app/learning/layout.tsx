@@ -2,6 +2,7 @@ import { currentUser } from '@clerk/nextjs/server'
 import { redirect } from 'next/navigation'
 import { createClient } from '@supabase/supabase-js'
 import ClientLearningLayout from '@/components/learning/ClientLearningLayout'
+import { checkAdminAccess } from '@/app/actions/admin-auth'
 
 export default async function LearningLayout({
     children,
@@ -12,6 +13,18 @@ export default async function LearningLayout({
 
     if (!user) {
         redirect('/sign-in')
+    }
+
+    // Check if user is admin
+    const { authorized: isAdmin } = await checkAdminAccess()
+
+    // If admin, allow access immediately
+    if (isAdmin) {
+        return (
+            <ClientLearningLayout>
+                {children}
+            </ClientLearningLayout>
+        )
     }
 
     // Check for license key

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import CourseCard from '@/components/learning/CourseCard'
-import { Instagram, Bot, Package, Workflow, Sparkles, Trophy, Flame, Target, Clock, Zap } from 'lucide-react'
+import { Instagram, Bot, Package, Workflow, Sparkles, Trophy, Flame, Target, Clock, Zap, DollarSign } from 'lucide-react'
 import { useCourse } from '@/context/CourseContext'
 import { useGamification } from '@/context/GamificationContext'
 import { useUser } from '@clerk/nextjs'
@@ -12,6 +12,8 @@ import LevelProgressBar from '@/components/gamification/LevelProgressBar'
 import StreakFlame from '@/components/gamification/StreakFlame'
 import AchievementsList from '@/components/gamification/AchievementsList'
 import DailyQuestsCard from '@/components/gamification/DailyQuestsCard'
+import ErrorBoundary from '@/components/ErrorBoundary'
+import Link from 'next/link'
 
 export default function LearningDashboard() {
     const { getCourseProgress, completedLessons } = useCourse()
@@ -89,19 +91,32 @@ export default function LearningDashboard() {
                     transition={{ duration: 0.6 }}
                     className="flex flex-col gap-6"
                 >
-                    <div>
-                        <div className="flex items-center gap-3 mb-4">
-                            <div className="h-px w-12 bg-purple-500/50" />
-                            <span className="text-purple-400 text-sm font-bold tracking-widest uppercase">
-                                Command Center
-                            </span>
+                    <div className="flex justify-between items-start">
+                        <div>
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="h-px w-12 bg-purple-500/50" />
+                                <span className="text-purple-400 text-sm font-bold tracking-widest uppercase">
+                                    Command Center
+                                </span>
+                            </div>
+                            <h1 className="text-4xl md:text-5xl font-black text-white mb-2 tracking-tight">
+                                {greeting}, <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">{user?.firstName || 'Creator'}</span>
+                            </h1>
+                            <p className="text-zinc-400 max-w-xl">
+                                Your empire is waiting. Pick up where you left off or start a new protocol.
+                            </p>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-black text-white mb-2 tracking-tight">
-                            {greeting}, <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">{user?.firstName || 'Creator'}</span>
-                        </h1>
-                        <p className="text-zinc-400 max-w-xl">
-                            Your empire is waiting. Pick up where you left off or start a new protocol.
-                        </p>
+
+                        <Link href="/affiliate">
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="hidden md:flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-xl text-green-400 font-bold hover:bg-green-500/30 transition-all"
+                            >
+                                <DollarSign className="w-5 h-5" />
+                                Partner Program
+                            </motion.button>
+                        </Link>
                     </div>
                 </motion.div>
 
@@ -113,36 +128,44 @@ export default function LearningDashboard() {
 
             {/* Gamification Stats Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-                <StatsCard
-                    icon={Flame}
-                    label="Day Streak"
-                    value={stats?.current_streak || 0}
-                    gradient="from-orange-500 to-red-500"
-                    iconColor="text-orange-500"
-                    subtitle={stats?.longest_streak ? `Best: ${stats.longest_streak}` : undefined}
-                />
-                <StatsCard
-                    icon={Zap}
-                    label="Total XP"
-                    value={(stats?.total_xp || 0).toLocaleString()}
-                    gradient="from-purple-500 to-pink-500"
-                    iconColor="text-purple-500"
-                />
-                <StatsCard
-                    icon={Trophy}
-                    label="Level"
-                    value={stats?.current_level || 1}
-                    gradient="from-yellow-500 to-orange-500"
-                    iconColor="text-yellow-500"
-                />
-                <StatsCard
-                    icon={Target}
-                    label="Lessons Done"
-                    value={totalLessonsCompleted}
-                    gradient="from-green-500 to-emerald-500"
-                    iconColor="text-green-500"
-                    subtitle={stats?.total_lessons_completed ? `All time: ${stats.total_lessons_completed}` : undefined}
-                />
+                <ErrorBoundary>
+                    <StatsCard
+                        icon={Flame}
+                        label="Day Streak"
+                        value={stats?.current_streak || 0}
+                        gradient="from-orange-500 to-red-500"
+                        iconColor="text-orange-500"
+                        subtitle={stats?.longest_streak ? `Best: ${stats.longest_streak}` : undefined}
+                    />
+                </ErrorBoundary>
+                <ErrorBoundary>
+                    <StatsCard
+                        icon={Zap}
+                        label="Total XP"
+                        value={(stats?.total_xp || 0).toLocaleString()}
+                        gradient="from-purple-500 to-pink-500"
+                        iconColor="text-purple-500"
+                    />
+                </ErrorBoundary>
+                <ErrorBoundary>
+                    <StatsCard
+                        icon={Trophy}
+                        label="Level"
+                        value={stats?.current_level || 1}
+                        gradient="from-yellow-500 to-orange-500"
+                        iconColor="text-yellow-500"
+                    />
+                </ErrorBoundary>
+                <ErrorBoundary>
+                    <StatsCard
+                        icon={Target}
+                        label="Lessons Done"
+                        value={totalLessonsCompleted}
+                        gradient="from-green-500 to-emerald-500"
+                        iconColor="text-green-500"
+                        subtitle={stats?.total_lessons_completed ? `All time: ${stats.total_lessons_completed}` : undefined}
+                    />
+                </ErrorBoundary>
             </div>
 
             {/* Level Progress Bar */}
@@ -153,20 +176,26 @@ export default function LearningDashboard() {
                     transition={{ delay: 0.2 }}
                     className="mb-8"
                 >
-                    <LevelProgressBar
-                        currentXP={stats.total_xp}
-                        currentLevel={stats.current_level}
-                    />
+                    <ErrorBoundary>
+                        <LevelProgressBar
+                            currentXP={stats.total_xp}
+                            currentLevel={stats.current_level}
+                        />
+                    </ErrorBoundary>
                 </motion.div>
             )}
 
             {/* Quests & Achievements Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
                 <div className="lg:col-span-2">
-                    <AchievementsList achievements={achievements} />
+                    <ErrorBoundary>
+                        <AchievementsList achievements={achievements} />
+                    </ErrorBoundary>
                 </div>
                 <div>
-                    <DailyQuestsCard quests={quests} />
+                    <ErrorBoundary>
+                        <DailyQuestsCard quests={quests} />
+                    </ErrorBoundary>
                 </div>
             </div>
 
@@ -188,6 +217,22 @@ export default function LearningDashboard() {
                             />
                         </motion.div>
                     ))}
+
+                    {/* Mobile Affiliate Link (if hidden on desktop header) */}
+                    <Link href="/affiliate" className="md:hidden">
+                        <motion.div
+                            whileHover={{ y: -5 }}
+                            className="h-full bg-gradient-to-br from-green-900/20 to-emerald-900/20 border border-green-500/20 rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-4 hover:border-green-500/40 transition-all cursor-pointer"
+                        >
+                            <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center">
+                                <DollarSign className="w-6 h-6 text-green-400" />
+                            </div>
+                            <div>
+                                <h3 className="text-xl font-bold text-white">Partner Program</h3>
+                                <p className="text-sm text-zinc-400 mt-1">Earn 40% commissions</p>
+                            </div>
+                        </motion.div>
+                    </Link>
                 </div>
             </div>
         </div>

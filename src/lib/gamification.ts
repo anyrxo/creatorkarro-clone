@@ -10,7 +10,10 @@
 }
 
 export function getXPForLevel(level: number): number {
-  return Math.floor(100 * level * 1.5)
+  // Formula: XP = 75 * (Level - 1)^2
+  // This is the inverse of Level = sqrt(XP / 75) + 1
+  if (level <= 1) return 0
+  return Math.floor(75 * Math.pow(level - 1, 2))
 }
 
 export function getLevelFromXP(xp: number): number {
