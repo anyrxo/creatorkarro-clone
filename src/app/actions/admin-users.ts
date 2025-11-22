@@ -27,7 +27,7 @@ export async function getStudents() {
     console.log('[Admin] Fetching profiles...')
     const { data: profiles, error } = await supabaseAdmin
         .from('profiles')
-        .select('*, license_keys(id, key, status, plan_type)')
+        .select('*, license_keys(id, key, status, plan_id)')
         .order('created_at', { ascending: false })
 
     if (error) {
@@ -62,7 +62,7 @@ export async function getStudents() {
             last_name: p.last_name,
             key: license?.key || 'No Key',
             status: license?.status || 'free', // 'free' if no key
-            plan_type: license?.plan_type || 'Free Tier',
+            plan_type: license?.plan_id || 'Free Tier',
             created_at: p.created_at,
             is_admin: p.is_admin || false,
             affiliate_code: affiliateMap.get(p.user_id) || null
@@ -84,7 +84,7 @@ export async function getStudents() {
                     last_name: 'Invite',
                     key: invite.key,
                     status: 'invited',
-                    plan_type: invite.plan_type,
+                    plan_type: invite.plan_id,
                     created_at: invite.created_at,
                     is_admin: false,
                     affiliate_code: null
