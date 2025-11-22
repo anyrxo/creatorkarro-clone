@@ -3,13 +3,15 @@
 import { learningContent } from '@/data/learning-content'
 import VideoPlayer from '@/components/learning/VideoPlayer'
 import { useParams, useRouter } from 'next/navigation'
-import { ArrowRight, CheckCircle, Download, FileText, ChevronLeft, Sparkles } from 'lucide-react'
+import { ArrowRight, CheckCircle, Download, FileText, ChevronLeft, Sparkles, Save, Cloud, CloudOff } from 'lucide-react'
 import Link from 'next/link'
 import { useCourse } from '@/context/CourseContext'
 import { motion, AnimatePresence } from 'framer-motion'
 import Confetti from '@/components/learning/Confetti'
 import { useState, useEffect } from 'react'
 import { useSound } from '@/hooks/useSound'
+import { useUser } from '@clerk/nextjs'
+import { supabase } from '@/lib/supabase'
 
 export default function LessonPage() {
     const params = useParams()
@@ -17,29 +19,79 @@ export default function LessonPage() {
     const moduleId = params.moduleId as string
     const lessonId = params.lessonId as string
     const router = useRouter()
+    const { user } = useUser()
 
     const { markLessonComplete, isLessonComplete } = useCourse()
     const { playSuccess } = useSound()
     const [showConfetti, setShowConfetti] = useState(false)
     const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({})
     const [notes, setNotes] = useState('')
+    const [saveStatus, setSaveStatus] = useState<'saved' | 'saving' | 'error'>('saved')
 
     const course = learningContent[courseId]
     const courseModule = course?.modules.find(m => m.id === moduleId)
     const lesson = courseModule?.lessons.find(l => l.id === lessonId)
 
-    // Load checked items and notes from local storage
+    // Load checked items and notes from local storage & Supabase
     useEffect(() => {
         if (lesson) {
+            // 1. Local Storage (Instant)
             const savedItems = localStorage.getItem(`action_items_${lesson.id}`)
             if (savedItems) setCheckedItems(JSON.parse(savedItems))
             else setCheckedItems({})
 
             const savedNotes = localStorage.getItem(`notes_${lesson.id}`)
             if (savedNotes) setNotes(savedNotes)
-            else setNotes('')
+
+            // 2. Supabase (Async Source of Truth)
+            if (user) {
+                const fetchNotes = async () => {
+                    const { data } = await supabase
+                        .from('user_notes')
+                        .select('content')
+                        .eq('user_id', user.id)
+                        .eq('lesson_id', `${courseId}::${lessonId}`)
+                        .single()
+
+                    if (data?.content) {
+                        // Only update if different to avoid cursor jumps if we were typing (though this runs on mount)
+                        // Actually, if we have local notes, we might want to keep them if they are newer? 
+                        // For simplicity, we'll assume Supabase is master, but if local exists and is different, maybe we should merge?
+                        // Let's just set it for now.
+                        setNotes(data.content)
+                        localStorage.setItem(`notes_${lesson.id}`, data.content)
+                    }
+                }
+                fetchNotes()
+            }
         }
-    }, [lesson, lesson?.id])
+    }, [lesson, lesson?.id, user, courseId, lessonId])
+
+    // Auto-save to Supabase
+    useEffect(() => {
+        if (!user || !lesson || !notes) return
+
+        setSaveStatus('saving')
+        const timeoutId = setTimeout(async () => {
+            const { error } = await supabase
+                .from('user_notes')
+                .upsert({
+                    user_id: user.id,
+                    lesson_id: `${courseId}::${lessonId}`,
+                    content: notes,
+                    updated_at: new Date().toISOString()
+                }, { onConflict: 'user_id, lesson_id' })
+
+            if (error) {
+                console.error('Error saving notes:', error)
+                setSaveStatus('error')
+            } else {
+                setSaveStatus('saved')
+            }
+        }, 1000)
+
+        return () => clearTimeout(timeoutId)
+    }, [notes, user, lesson, courseId, lessonId])
 
     const toggleActionItem = (itemId: string) => {
         if (!lesson) return
@@ -193,10 +245,32 @@ export default function LessonPage() {
 
                         {/* Personal Notes Section */}
                         <div className="bg-zinc-900/30 border border-white/5 rounded-xl p-6">
-                            <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                                <Sparkles className="w-5 h-5 text-yellow-500" />
-                                My Notes
-                            </h3>
+                            <div className="flex items-center justify-between mb-4">
+                                <h3 className="text-lg font-bold text-white flex items-center gap-2">
+                                    <Sparkles className="w-5 h-5 text-yellow-500" />
+                                    My Notes
+                                </h3>
+                                <div className="flex items-center gap-2 text-xs">
+                                    {saveStatus === 'saving' && (
+                                        <span className="text-zinc-400 flex items-center gap-1">
+                                            <Cloud className="w-3 h-3 animate-pulse" />
+                                            Saving...
+                                        </span>
+                                    )}
+                                    {saveStatus === 'saved' && (
+                                        <span className="text-green-400 flex items-center gap-1">
+                                            <CheckCircle className="w-3 h-3" />
+                                            Saved
+                                        </span>
+                                    )}
+                                    {saveStatus === 'error' && (
+                                        <span className="text-red-400 flex items-center gap-1">
+                                            <CloudOff className="w-3 h-3" />
+                                            Error saving
+                                        </span>
+                                    )}
+                                </div>
+                            </div>
                             <textarea
                                 value={notes}
                                 onChange={(e) => handleSaveNotes(e.target.value)}
@@ -204,7 +278,6 @@ export default function LessonPage() {
                                 className="w-full h-40 bg-black/50 border border-white/10 rounded-lg p-4 text-zinc-300 focus:outline-none focus:border-purple-500 transition-colors resize-none placeholder:text-zinc-700"
                             />
                             <div className="mt-2 text-xs text-zinc-500 flex justify-between">
-                                <span>Auto-saving...</span>
                                 <span>{notes.length} chars</span>
                             </div>
                         </div>

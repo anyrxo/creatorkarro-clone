@@ -3,11 +3,12 @@
 import { learningContent } from '@/data/learning-content'
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
-import { PlayCircle, ArrowRight, CheckCircle, Lock, BarChart3, Clock, Trophy, Sparkles, Flame, Zap } from 'lucide-react'
-import { motion } from 'framer-motion'
+import { PlayCircle, ArrowRight, CheckCircle, Lock, BarChart3, Clock, Trophy, Sparkles, Flame, Zap, ChevronDown, FileText } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useCourse } from '@/context/CourseContext'
 import { useGamification } from '@/context/GamificationContext'
 import LevelProgressBar from '@/components/gamification/LevelProgressBar'
+import { useState } from 'react'
 
 export default function CourseOverviewPage() {
     const params = useParams()
@@ -15,10 +16,19 @@ export default function CourseOverviewPage() {
     const course = learningContent[courseId]
     const { getCourseProgress, isLessonComplete } = useCourse()
     const { stats } = useGamification()
+    const [expandedModules, setExpandedModules] = useState<string[]>([])
 
     if (!course) return null
 
     const progress = getCourseProgress(courseId)
+
+    const toggleModule = (moduleId: string) => {
+        setExpandedModules(prev =>
+            prev.includes(moduleId)
+                ? prev.filter(id => id !== moduleId)
+                : [...prev, moduleId]
+        )
+    }
 
     // Find the first incomplete lesson to "Continue Learning"
     let nextLessonUrl = null
@@ -174,17 +184,20 @@ export default function CourseOverviewPage() {
                         const totalLessons = courseModule.lessons.length
                         const isModuleComplete = completedLessons === totalLessons && totalLessons > 0
                         const isLocked = index > 0 && !course.modules[index - 1].lessons.every(l => isLessonComplete(courseId, l.id))
-                        // For now, we won't strictly lock modules, but we can visually indicate it
+                        const isExpanded = expandedModules.includes(courseModule.id)
 
                         return (
                             <div
                                 key={courseModule.id}
                                 className={`group relative overflow-hidden rounded-2xl border transition-all duration-300 ${isModuleComplete
-                                    ? 'bg-zinc-900/20 border-green-500/20 hover:border-green-500/40'
-                                    : 'bg-zinc-900/40 border-white/5 hover:border-white/10'
+                                    ? 'bg-zinc-900/20 border-green-500/20'
+                                    : 'bg-zinc-900/40 border-white/5'
                                     }`}
                             >
-                                <div className="p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6">
+                                <div
+                                    className="p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6 cursor-pointer hover:bg-white/5 transition-colors"
+                                    onClick={() => toggleModule(courseModule.id)}
+                                >
                                     {/* Module Number/Status */}
                                     <div className={`w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold border flex-shrink-0 ${isModuleComplete
                                         ? 'bg-green-500/10 text-green-400 border-green-500/20'
@@ -207,19 +220,76 @@ export default function CourseOverviewPage() {
 
                                     {/* Action */}
                                     <div className="flex items-center gap-4">
-                                        {courseModule.lessons.length > 0 && (
-                                            <Link
-                                                href={`/learning/${courseId}/${courseModule.id}/${courseModule.lessons[0].id}`}
-                                                className={`px-6 py-3 rounded-xl font-medium text-sm transition-all ${isModuleComplete
-                                                    ? 'bg-white/5 text-white hover:bg-white/10'
-                                                    : 'bg-white text-black hover:bg-zinc-200'
-                                                    }`}
-                                            >
-                                                {isModuleComplete ? 'Review Module' : 'Start Module'}
-                                            </Link>
-                                        )}
+                                        <ChevronDown className={`w-5 h-5 text-zinc-500 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} />
                                     </div>
                                 </div>
+
+                                {/* Expanded Lesson List */}
+                                <AnimatePresence>
+                                    {isExpanded && (
+                                        <motion.div
+                                            initial={{ height: 0, opacity: 0 }}
+                                            animate={{ height: 'auto', opacity: 1 }}
+                                            exit={{ height: 0, opacity: 0 }}
+                                            transition={{ duration: 0.3 }}
+                                            className="border-t border-white/5 bg-black/20"
+                                        >
+                                            <div className="p-4 space-y-2">
+                                                {courseModule.lessons.map((lesson, lIndex) => {
+                                                    const isLessonCompleted = isLessonComplete(courseId, lesson.id)
+                                                    const isLessonLocked = isLocked // Simplified lock logic
+
+                                                    return (
+                                                        <Link
+                                                            key={lesson.id}
+                                                            href={`/learning/${courseId}/${courseModule.id}/${lesson.id}`}
+                                                            className={`flex items-center gap-4 p-4 rounded-xl transition-all ${isLessonCompleted
+                                                                    ? 'bg-green-500/5 hover:bg-green-500/10 text-green-100'
+                                                                    : 'hover:bg-white/5 text-zinc-300'
+                                                                }`}
+                                                        >
+                                                            <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold border ${isLessonCompleted
+                                                                    ? 'bg-green-500/20 border-green-500/30 text-green-400'
+                                                                    : 'bg-white/5 border-white/10 text-zinc-500'
+                                                                }`}>
+                                                                {isLessonCompleted ? <CheckCircle className="w-4 h-4" /> : lIndex + 1}
+                                                            </div>
+
+                                                            <div className="flex-1">
+                                                                <div className="font-medium mb-0.5">{lesson.title}</div>
+                                                                <div className="flex items-center gap-3 text-xs text-zinc-500">
+                                                                    <span className="flex items-center gap-1">
+                                                                        <Clock className="w-3 h-3" />
+                                                                        {lesson.duration}
+                                                                    </span>
+                                                                    {lesson.type === 'video' ? (
+                                                                        <span className="flex items-center gap-1">
+                                                                            <PlayCircle className="w-3 h-3" />
+                                                                            Video
+                                                                        </span>
+                                                                    ) : (
+                                                                        <span className="flex items-center gap-1">
+                                                                            <FileText className="w-3 h-3" />
+                                                                            Reading
+                                                                        </span>
+                                                                    )}
+                                                                </div>
+                                                            </div>
+
+                                                            {isLessonCompleted ? (
+                                                                <div className="text-xs font-bold text-green-500 uppercase tracking-wider">Completed</div>
+                                                            ) : (
+                                                                <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-purple-500 group-hover:text-white transition-colors">
+                                                                    <PlayCircle className="w-4 h-4" />
+                                                                </div>
+                                                            )}
+                                                        </Link>
+                                                    )
+                                                })}
+                                            </div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
 
                                 {/* Progress Bar Bottom */}
                                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-zinc-800/50">
