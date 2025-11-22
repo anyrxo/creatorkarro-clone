@@ -199,8 +199,11 @@ export function GamificationProvider({ children }: { children: ReactNode }) {
 
       // 3. Check for Quest Completion (if reason matches)
       if (reason === 'lesson_complete') {
-        // Find 'complete_lesson' quest
-        const lessonQuest = quests.find(q => q.quest?.quest_type === 'complete_lesson')
+        // Find lesson quest (handle both old 'complete_lesson' and new 'lesson_complete' formats)
+        const lessonQuest = quests.find(q =>
+          q.quest?.quest_type === 'complete_lesson' ||
+          q.quest?.quest_type === 'lesson_complete'
+        )
         if (lessonQuest && !lessonQuest.is_completed) {
           const newProgress = lessonQuest.progress + 1
           const isComplete = newProgress >= (lessonQuest.quest?.target_count || 1)
